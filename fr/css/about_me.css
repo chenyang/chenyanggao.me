@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*div about_me*/
+#about_me{
+	display:block;
+	width:50%;
+	float:left;
+	font-size:14px;
+	color:#666666;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+section {
+	display:block;
+}
+
+article {
+	background-color:#F9F9F9;
+	display:block;
+	margin: 10px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+article header {
+	background-color:#CCCCCC;
+	display:block;
+	color:#FFFFFF;
+	text-align:center;
+	width:98%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+
+
+article footer {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+article h1 {
+	font-size: 18px;
+}
+
+	
+aside {
+	margin-top:20px;
+	display:block;
+	width:25%;
+	float:left;
+	
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+
+
+aside h3 {
+	background-color: #eee;
+	margin: 15px;
+	padding:5px;
+	color:#333333;
+	background-color: #F47D31;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+	

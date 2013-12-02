@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+#projects_detail{
+	margin:10px;
+	display:block;
+	width:60%;
+	float:left;
+	font-size:12px;
+	color:#666666;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	background-color:#F7F7F7;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#projects_detail h3{
+	text-align:left;
+	color:#333333;
+	font-size:14px;
+}
+.video{
+	display:block;
+	padding:5px;
+	margin:5px;
+	width:360px;
+	height:250px;
+	background-color:#E6E6E6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+.image{
+	display:block;
+	width:100%;
+}
+.project_show_image{
+	display:block;
+	padding:5px;
+	width:190px;
+	height:160px;
+	margin:5px;
+	margin-bottom:10px;
+	background-color:#E6E6E6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align:center;
+}
+
+
+.project_description h2, p{
+	text-align:left;
+	width:95%;
+	font-weight:600;
+	color:#666666;
+}
+
+.project_precision p{
+	text-align:left;
+	width:95%;
+	font-weight:400;
+	color:#666666;
+	float:none;
+}
+
+.article_left{
+	background-color:#F7F7F7;
+	display:block;
+	margin: 5px;
+	padding: 5px;
+	float:left;
+	width:65%;
+}
+.article_right{
+	display:block;
+	margin: 5px;
+	padding: 10px;
+	float:left;
+	width:25%;
+	
+	border-left-color:#00005B;
+	border-left-width:4px;
+	border-left-style:solid;
+}
+
+.article_right p{
+	font-weight:400;
+}
+
+.article_left header{
+	display:block;
+	border-bottom: 1px solid #999999;
+	background-color:#F7F7F7;
+	color:#333333;
+	font-weight:600;
+	font-size:18px;
+	font-stretch:wider;
+	text-align:left;
+	color:#333333;
+	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+}
+
+.article_right header {
+	margin-top:5px;
+	margin-bottom:5px;
+	background-color:#F7F7F7;
+	color:#333333;
+	font-weight:600;
+	font-stretch:wider;
+	text-align:left;
+	color:#666666;
+}
+
+section {
+	display:block;
+}
+
+
+
+article h1 {
+	font-size: 18px;
+}
+
+
+
+
+
+/*aside things..*/
+
+aside {
+	margin-top:10px;
+	display:block;
+	width:15%;
+	float:left;
+	background-color:#F7F7F7;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+aside h3 {
+	margin: 15px;
+	padding:5px;
+	color:#FFFFFF;
+	background-color:#999999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+aside p {
+	margin: 15px;
+	color:#333333;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+aside nav{
+	display:block;
+	text-align:center;
+	width:100%;
+	float:left;
+	height:100%;
+	font-size:10px;
+	font-style:oblique;
+}
+
+
+aside nav a:link, nav a:visited {
+	display: block;
+	border-bottom: 2px solid #FFDFBF;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 5px;
+}
+
+aside nav a:hover {
+	color: white;
+	background-color: #F47D31;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
