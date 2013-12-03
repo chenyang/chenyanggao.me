@@ -1,4 +1,4 @@
-webSemClient
+chenyanggao.me
 ============
 
-UM2 Decol webSem Project AngularJS
+My personal site with AngularJS, js, html
