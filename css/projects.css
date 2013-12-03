@@ -10,11 +10,11 @@
 	font-family:Geneva, Arial, Helvetica, sans-serif;
 }
 
-section {
+#projects section {
 	display:block;
 }
 
-.project_show_image{
+#projects .project_show_image{
 	float:left;
 	margin:5px;
 	border:#D9D9D9;
@@ -24,7 +24,7 @@ section {
 	height:200px;
 }
 
-article {
+#projects article {
 	background-color:#F7F7F7;
 	display:block;
 	margin: 10px;
@@ -37,7 +37,7 @@ article {
 	float:left;
 }
 
-article header {
+#projects article header {
 	background-color:#666666;
 	display:block;
 	color:#FFFFFF;
@@ -50,7 +50,7 @@ article header {
 
 }
 
-article footer {
+#projects article footer {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;

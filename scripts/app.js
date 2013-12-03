@@ -30,10 +30,6 @@
 		appDeps.push(mod.deps);
 		appDeps = _.flatten(appDeps);
 	}); 
-	
-	
-	
-	console.log(appDeps);
 
 	var app = angular.module('App', appDeps);
 
@@ -43,14 +39,14 @@
 	}]);*/
 
 
-	/*//Configure route provider, route controller and template url
+	//Configure route provider, route controller and template url
 	app.config(['$routeProvider','Navigation', function($routeProvider, Navigation) {
 		var listeNavigation=Navigation;
 		_.each(listeNavigation, function(navigation){
 			$routeProvider.when(''+navigation.when, {templateUrl:navigation.templateUrl, controller:navigation.controller, view:navigation.view});
-			$routeProvider.otherwise({redirectTo:'/login'});
+			$routeProvider.otherwise({redirectTo:'/'});
 		});
-	}]);*/
+	}]);
 	
 })();
 

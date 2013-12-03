@@ -12,11 +12,11 @@
 	font-family:Geneva, Arial, Helvetica, sans-serif;
 }
 
-section {
+#about_me section {
 	display:block;
 }
 
-article {
+#about_me article {
 	background-color:#F9F9F9;
 	display:block;
 	margin: 10px;
@@ -27,7 +27,7 @@ article {
 }
 
 
-article header {
+#about_me article header {
 	background-color:#CCCCCC;
 	display:block;
 	color:#FFFFFF;
@@ -41,19 +41,19 @@ article header {
 }
 
 
-article footer {
+#about_me article footer {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: 5px;
 }
 
-article h1 {
+#about_me article h1 {
 	font-size: 18px;
 }
 
 	
-aside {
+#about_me aside {
 	margin-top:20px;
 	display:block;
 	width:25%;
@@ -65,7 +65,7 @@ aside {
 }
 
 
-aside h3 {
+#about_me aside h3 {
 	background-color: #eee;
 	margin: 15px;
 	padding:5px;

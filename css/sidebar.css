@@ -1,0 +1,59 @@
+
+/*aside things..*/
+.sidebar aside {
+	margin-top:10px;
+	display:block;
+	width:15%;
+	float:left;
+	background-color:#F7F7F7;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.sidebar aside h3 {
+	margin: 15px;
+	padding:5px;
+	color:#FFFFFF;
+	background-color:#999999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.sidebar aside p {
+	margin: 15px;
+	color:#333333;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+.sidebar aside nav{
+	display:block;
+	text-align:center;
+	width:100%;
+	float:left;
+	height:100%;
+	font-size:10px;
+	font-style:oblique;
+}
+
+
+.sidebar aside nav a:link, nav a:visited {
+	display: block;
+	border-bottom: 2px solid #FFDFBF;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.sidebar aside nav a:hover {
+	color: white;
+	background-color: #F47D31;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

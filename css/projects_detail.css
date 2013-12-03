@@ -21,7 +21,7 @@
 	color:#333333;
 	font-size:14px;
 }
-.video{
+#projects_detail .video{
 	display:block;
 	padding:5px;
 	margin:5px;
@@ -34,11 +34,11 @@
 }
 
 
-.image{
+#projects_detail .image{
 	display:block;
 	width:100%;
 }
-.project_show_image{
+#projects_detail .project_show_image{
 	display:block;
 	padding:5px;
 	width:190px;
@@ -53,14 +53,14 @@
 }
 
 
-.project_description h2, p{
+#projects_detail .project_description h2, p{
 	text-align:left;
 	width:95%;
 	font-weight:600;
 	color:#666666;
 }
 
-.project_precision p{
+#projects_detail .project_precision p{
 	text-align:left;
 	width:95%;
 	font-weight:400;
@@ -68,7 +68,7 @@
 	float:none;
 }
 
-.article_left{
+#projects_detail .article_left{
 	background-color:#F7F7F7;
 	display:block;
 	margin: 5px;
@@ -76,7 +76,7 @@
 	float:left;
 	width:65%;
 }
-.article_right{
+#projects_detail .article_right{
 	display:block;
 	margin: 5px;
 	padding: 10px;
@@ -88,11 +88,11 @@
 	border-left-style:solid;
 }
 
-.article_right p{
+#projects_detail .article_right p{
 	font-weight:400;
 }
 
-.article_left header{
+#projects_detail .article_left header{
 	display:block;
 	border-bottom: 1px solid #999999;
 	background-color:#F7F7F7;
@@ -109,7 +109,7 @@
 	
 }
 
-.article_right header {
+#projects_detail .article_right header {
 	margin-top:5px;
 	margin-bottom:5px;
 	background-color:#F7F7F7;
@@ -120,22 +120,18 @@
 	color:#666666;
 }
 
-section {
+#projects_detail section {
 	display:block;
 }
 
 
 
-article h1 {
+#projects_detail article h1 {
 	font-size: 18px;
 }
 
-
-
-
-
-/*aside things..*/
-
+/* 
+aside things..
 aside {
 	margin-top:10px;
 	display:block;
@@ -193,4 +189,4 @@ aside nav a:hover {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-
+ */
