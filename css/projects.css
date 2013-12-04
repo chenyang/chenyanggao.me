@@ -1,53 +1,52 @@
 @charset "utf-8";
 /* CSS Document */
-
-#projects{
-	display:block;
-	width:65%;
-	float:left;
-	font-size:12px;
-	color:#666666;
-	font-family:Geneva, Arial, Helvetica, sans-serif;
+#projects {
+	display: block;
+	width: 65%;
+	float: left;
+	font-size: 12px;
+	color: #666666;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 #projects section {
-	display:block;
+	display: block;
 }
 
-#projects .project_show_image{
-	float:left;
-	margin:5px;
-	border:#D9D9D9;
-	border-style:solid;
-	border-width:thick;
-	width:95%;
-	height:200px;
+#projects .project_show_image {
+	float: left;
+	margin: 5px;
+	border: #D9D9D9;
+	border-style: solid;
+	border-width: thick;
+	width: 95%;
+	opacity: 0.8;
+	height: 200px;
 }
+
 
 #projects article {
-	background-color:#F7F7F7;
-	display:block;
+	background-color: #F7F7F7;
+	display: block;
 	margin: 10px;
 	padding: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	
-	width:44%;
-	float:left;
+	width: 44%;
+	float: left;
 }
 
 #projects article header {
-	background-color:#666666;
-	display:block;
-	color:#FFFFFF;
-	text-align:center;
-	width:98%;
+	background-color: #666666;
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	width: 98%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	padding: 5px;
-
 }
 
 #projects article footer {
@@ -61,18 +60,17 @@ article h1 {
 	font-size: 18px;
 }
 
-	
 aside {
-	display:block;
-	width:15%;
-	float:left;
+	display: block;
+	width: 15%;
+	float: left;
 }
 
 aside h3 {
 	margin: 15px;
-	padding:5px;
-	color:#FFFFFF;
-	background-color:#999999;
+	padding: 5px;
+	color: #FFFFFF;
+	background-color: #999999;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -80,24 +78,22 @@ aside h3 {
 
 aside p {
 	margin: 15px;
-	color:#333333;
+	color: #333333;
 	font-weight: bold;
 	font-style: italic;
 }
 
-
-aside nav{
-	display:block;
-	text-align:center;
-	width:100%;
-	float:left;
-	height:100%;
-	font-size:10px;
-	font-style:oblique;
+aside nav {
+	display: block;
+	text-align: center;
+	width: 100%;
+	float: left;
+	height: 100%;
+	font-size: 10px;
+	font-style: oblique;
 }
 
-
-aside nav a:link, nav a:visited {
+aside nav a:link,nav a:visited {
 	display: block;
 	border-bottom: 3px solid #fff;
 	padding: 10px;
@@ -113,4 +109,3 @@ aside nav a:hover {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-

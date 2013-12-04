@@ -1,9 +1,8 @@
-// JavaScript Document
+/*// JavaScript Document
 // JavaScript Document
 
 jQuery.noConflict();
-jQuery(document).ready(function(){
-										
+							
 		jQuery(".keywords_block").each(function(){
 												
 			jQuery(".keywords_block").fadeTo(300, 0.15);
@@ -17,6 +16,5 @@ jQuery(document).ready(function(){
 					jQuery(this).fadeTo(300, 0.15);
 				});		
 			
-		});
 });
-      							
+      							*/

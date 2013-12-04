@@ -33,11 +33,6 @@
 
 	var app = angular.module('App', appDeps);
 
-	/*
-	app.config(['$httpProvider', function ($httpProvider) {
-		delete $httpProvider.defaults.headers.common['X-Requested-With'];
-	}]);*/
-
 
 	//Configure route provider, route controller and template url
 	app.config(['$routeProvider','Navigation', function($routeProvider, Navigation) {
