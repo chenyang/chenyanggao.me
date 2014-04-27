@@ -29,6 +29,9 @@
 			 {  when:"/expernova", 
 				 templateUrl:"views/Expernova.html"
 			 }, 
+			 {  when:"/findevent", 
+				 templateUrl:"views/FindEvent.html"
+			 }, 
 			 {  when:"/french_airline", 
 				 templateUrl:"views/French_Airline.html"
 			 }, 

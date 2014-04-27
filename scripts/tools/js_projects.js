@@ -22,6 +22,15 @@ jQuery(document).ready(function(){
 		});
 });
 		
+function sharpen_FindEvent()
+{
+	jQuery("#article_FindEvent").fadeTo(300, 1.0);
+}		
+
+function restore_FindEvent()
+{
+	jQuery("#article_FindEvent").fadeTo(300, 0.55);
+}	
 
 function sharpen_IOvision()
 {

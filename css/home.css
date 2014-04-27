@@ -75,6 +75,7 @@
 }
 
 #home .home_project {
+	border: solid 1px rgb(230, 225, 225);
 	height: 350px;
 	background-color: #F9F9F9;
 	font-size: 12px;
