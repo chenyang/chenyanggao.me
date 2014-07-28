@@ -1,11 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.style4{
-    font-size:18px;   
-}
-
-.block_CV{
+.block-CV a{
 	float:left;
 	color:#003366;
 	alignment-adjust:central;
@@ -19,14 +15,14 @@
 	border-radius: 5px;
 }
 
-.block_CV:hover{
+.block-CV a :hover{
 	background-color:#999999;
 	color:#FFFFFF;
 }
 
 
 .align_left{
-float:left;
+	float:left;
 }
 
 .align_right{
@@ -35,17 +31,13 @@ margin-right:10px;
 }
 
 
-#resume{
+.resume{
 	display:block;
 	width:60%;
 	float:left;
 	font-size:12px;
 	color:#666666;
 	font-family:Geneva, Arial, Helvetica, sans-serif;
-}
-
-section {
-	display:block;
 }
 
 article {
@@ -100,14 +92,28 @@ aside h3 {
 	border-radius: 10px;
 }
 
-aside p {
-	margin: 15px;
+aside span{
+	font-size:18px;
 	color:#999999;
 	font-weight: bold;
 }
 
-aside li {
+aside #skills{
 	margin-left:15px;
+}
+
+aside #courses{
+	margin-left:15px;
+	color:#999999;
+	font-weight: bold;
+}
+
+
+aside ul{
+	-webkit-padding-start:0px;
+}
+
+aside ul li {
 	color:#999999;
 	font-weight: bold;
 	list-style:none;

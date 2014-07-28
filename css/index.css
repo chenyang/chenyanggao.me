@@ -29,25 +29,6 @@ text-decoration:none;
 text-decoration:underline;
 }
 
-/*
-#project_a{
-	width:38%;
-	height:180px;
-	margin:20px;
-	float:left;
-	background-color:#0000CC;
-}
-
-#project_b{
-	width:38%;
-	height:180px;
-	margin:20px;
-	float:right;
-	background-color:#66FF99;
-}
-*/
-
-
 #project_line{
 alignment-baseline:central;
 background-color:#FFFF66;
@@ -58,7 +39,6 @@ background-color:#FFFF66;
 	margin:auto;
 }
 
-
 #container {
 	margin:20px;
 	background-color:#FDF3D9;
@@ -66,7 +46,6 @@ background-color:#FFFF66;
 	-moz-border-radius:10px;
 	border-radius:10px;
 }
-
 
 body {
 	background-color:#CCCCCC;
@@ -124,22 +103,6 @@ h3 {
 	color: #F47D31;
 }
 
-h4 {
-/*
-	color: #F47D31;
-	background-color: #fff;
-	-webkit-box-shadow: 2px 2px 20px #888;
-	-webkit-transform: rotate(-45deg);
-	-moz-box-shadow: 2px 2px 20px #888;
-	-moz-transform: rotate(-45deg);
-	position: absolute;
-	padding: 0px 150px;
-	top: 50px;
-	left: -120px;
-	text-align:center;
-*/	
-}
-
 nav {
 	display:block;
 	text-align:center;
@@ -160,13 +123,18 @@ nav a:link, nav a:visited {
 nav a:hover {
 	color: white;
 	background-color: #F47D31;
+    opacity:1;
+    -webkit-transition: background-color .5s ease-in-out;
+	-moz-transition: background-color .5s ease-in-out;
+	-ms-transition: background-color .5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out;
+	transition: background-color .5s ease-in-out;
 }
 
 nav h3 {
 	margin: 15px;
 	color: white;
 }
-
 
 footer {
 	clear: both;	
@@ -188,6 +156,10 @@ footer p {
 /* links */
 a{
 	color: #F47D31;
+}
+
+.index-image{
+	width:100%;
 }
 
 a:hover {
