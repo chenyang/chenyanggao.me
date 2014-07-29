@@ -15,11 +15,14 @@
 	border-radius: 5px;
 }
 
+.block-CV b{
+	font-size:14px;
+}
+
 .block-CV a :hover{
 	background-color:#999999;
 	color:#FFFFFF;
 }
-
 
 .align_left{
 	float:left;
@@ -29,7 +32,6 @@
 float:right;
 margin-right:10px;
 }
-
 
 .resume{
 	display:block;
@@ -55,7 +57,7 @@ article header {
 	display:block;
 	color:#FFFFFF;
 	text-align:center;
-	width:98%;
+	width:100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -72,7 +74,6 @@ article h1 {
 	font-size: 18px;
 }
 
-
 /*skills part*/
 aside {
 	display:block;
@@ -82,7 +83,9 @@ aside {
 	font-size:12px;
 }
 
-aside h3 {
+.skill-label {
+	font-size:16px;
+	font-weight:bold;
 	margin: 15px;
 	padding:5px;
 	color:#333333;
@@ -123,3 +126,22 @@ aside ul li {
 	float:right;
 	margin-right:25px;
 }
+
+/**
+ * responsive design
+ */ 
+@media screen and (max-width:1024px){
+	.skill-label, aside span{
+		font-size: 14px;
+	}
+	.block-CV, aside{
+		display:none;
+	}
+	.resume{
+		width:100%;
+	}
+	#skills span{
+		font-size: 14px;
+	}
+}
+

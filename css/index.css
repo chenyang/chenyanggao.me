@@ -39,15 +39,15 @@ background-color:#FFFF66;
 	margin:auto;
 }
 
-#container {
-	margin:20px;
+#my-container {
+	margin:20px 40px 40px 40px;
 	background-color:#FDF3D9;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 }
 
-body {
+#my-body {
 	background-color:#CCCCCC;
 	font-family:Geneva,Arial,Helvetica,sans-serif;
 	margin: 0px auto;
@@ -55,7 +55,6 @@ body {
 	border:solid;
 	border-color:#FFFFFF;
 	background-image:url(../images/background.jpg);
-	
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
@@ -103,7 +102,15 @@ h3 {
 	color: #F47D31;
 }
 
-nav {
+.nav-mobile :hover{
+	cursor:pointer;
+}
+
+.nav-mobile{
+	display: none;
+}
+
+.nav-desktop {
 	display:block;
 	text-align:center;
 	width:20%;
@@ -111,7 +118,7 @@ nav {
 	height:100%;
 }
 
-nav a:link, nav a:visited {
+.nav-desktop a:link, .nav-desktop a:visited {
 	display: block;
 	border-bottom: 3px solid #fff;
 	padding: 10px;
@@ -120,7 +127,7 @@ nav a:link, nav a:visited {
 	margin: 5px;
 }
 
-nav a:hover {
+.nav-desktop a:hover {
 	color: white;
 	background-color: #F47D31;
     opacity:1;
@@ -131,7 +138,7 @@ nav a:hover {
 	transition: background-color .5s ease-in-out;
 }
 
-nav h3 {
+.nav-desktop h3 {
 	margin: 15px;
 	color: white;
 }
@@ -165,5 +172,21 @@ a{
 a:hover {
 	text-decoration: none;
 	cursor:pointer;
-	
 }
+
+/**
+ * responsive design
+ */
+ @media screen and (max-width:1024px){
+ 	.nav-desktop {
+		text-align:center;
+		width:100%;
+		clear:both;
+	}
+	
+	.nav-mobile{
+		display:block;
+	}
+ }
+ 
+

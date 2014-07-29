@@ -41,7 +41,7 @@
 }
 
 
-.sidebar aside nav a:link, nav a:visited {
+.sidebar aside nav a:link, .sidebar aside nav a:visited {
 	display: block;
 	border-bottom: 2px solid #FFDFBF;
 	padding: 10px;
@@ -57,3 +57,12 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+/**
+ * responsive design
+ */
+@media screen and (max-width:1024px){
+	  .sidebar aside{
+	 	display:none;
+	 }
+ }

@@ -26,7 +26,7 @@
 	display:block;
 	color:#FFFFFF;
 	text-align:center;
-	width:98%;
+	width:100%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -56,7 +56,7 @@
 	border-radius:3px;
 }
 
-.about-me aside h3 {
+.about-me aside {
 	background-color: #eee;
 	margin: 15px;
 	padding:5px;
@@ -80,7 +80,7 @@
 	}
 	
 	.about-me{
-		width:80%;
+		width:100%;
 	}
 	
 	.about-me p{

@@ -22,11 +22,7 @@
 		jQuery("#included").load("resume.html");
     }
 	
-	
-	
-	
-	
-	
+
 	//Include project pages
 	
 	function include_IOvision()
