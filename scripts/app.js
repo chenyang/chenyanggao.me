@@ -9,7 +9,6 @@
 	               { nomModule: 'mod', deps: [] }
 	              ];
 
-
 	_.each(modules, function(mod){
 		var
 		filter = mod.nomModule + ".filter",
@@ -30,10 +29,12 @@
 		appDeps.push(mod.deps);
 		appDeps = _.flatten(appDeps);
 	}); 
+	
+	//Adding angularUI Bootstrap
+	appDeps.push('ngRoute');
+	appDeps.push('ui.bootstrap');
 
 	var app = angular.module('App', appDeps);
-
-
 	//Configure route provider, route controller and template url
 	app.config(['$routeProvider','Navigation', function($routeProvider, Navigation) {
 		var listeNavigation=Navigation;

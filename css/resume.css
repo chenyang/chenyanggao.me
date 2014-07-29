@@ -72,6 +72,8 @@ article footer {
 
 article h1 {
 	font-size: 18px;
+	padding:5px;
+	margin:10px;
 }
 
 /*skills part*/
@@ -84,7 +86,7 @@ aside {
 }
 
 .skill-label {
-	font-size:16px;
+	font-size:14px;
 	font-weight:bold;
 	margin: 15px;
 	padding:5px;

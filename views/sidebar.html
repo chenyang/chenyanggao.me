@@ -1,21 +1,30 @@
 <link rel="stylesheet" href="css/sidebar.css">
-<div>
+<div ng-controller="SideBarCtrl">
 	<aside>
         <h3>PROJECTS</h3>
-        <nav>
-       	  <a href="#/findevent">Music Event<br/>---Big Data and Semantic web application for music</a>
-		  <a href="#/iovision">RIA IOvision<br/>---Small Business ERP Prototype & system integration</a>
-          <a href="#/asa">ASA QLIMS<br/>---PhoneGap Tablet prototype</a>
-		  <a href="#/uvsp" >UVSP<br/>---.NET Framework Dev</a>
-          <a href="#/pollaroid">POLLAROID<br/>---iOS development</a>
-          <a href="#/french_airline">French Airline<br/>---Algorithm in C</a>
-          <a href="#/stadium">Service Management System<br/>---Web Based CMS</a>
-          <a href="#/expernova">Expernova<br/>---Social Network Integration</a>
-          <a href="#/allons_y">Allons-y Francais<br/>---French Teaching Video</a>
-          <a href="#/good_deed_movement">Good Tracking Service<br/>Forum development</a>
-          <a href="#/slab">SLAB<br/>---Java Based Resource Planning System</a>
-          <a href="#/euronext">Euronext<br/>---European Enterprises analysis</a>
-          <a href="#/mail_system">Simple Chat<br/>---C based mailing system</a>
-        </nav>      
+        <tabset vertical="true" type="pills">
+		    <tab ng-repeat="tab in tabs">
+		     	<tab-heading>
+        			<a>{{tab.desc}}<br/>---{{tab.content}}</a>
+      			</tab-heading>
+		    </tab>
+  		</tabset>
+        <!-- 
+	        <nav>
+	       	  <a href="#/findevent">Music Event<br/>---Big Data and Semantic web application for music</a>
+			  <a href="#/iovision">RIA IOvision<br/>---Small Business ERP Prototype & system integration</a>
+	          <a href="#/asa">ASA QLIMS<br/>---PhoneGap Tablet prototype</a>
+			  <a href="#/uvsp" >UVSP<br/>---.NET Framework Dev</a>
+	          <a href="#/pollaroid">POLLAROID<br/>---iOS development</a>
+	          <a href="#/french_airline">French Airline<br/>---Algorithm in C</a>
+	          <a href="#/stadium">Service Management System<br/>---Web Based CMS</a>
+	          <a href="#/expernova">Expernova<br/>---Social Network Integration</a>
+	          <a href="#/allons_y">Allons-y Francais<br/>---French Teaching Video</a>
+	          <a href="#/good_deed_movement">Good Tracking Service<br/>Forum development</a>
+	          <a href="#/slab">SLAB<br/>---Java Based Resource Planning System</a>
+	          <a href="#/euronext">Euronext<br/>---European Enterprises analysis</a>
+	          <a href="#/mail_system">Simple Chat<br/>---C based mailing system</a>
+	        </nav>    
+         -->
 	</aside>
 </div>	

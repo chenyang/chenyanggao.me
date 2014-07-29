@@ -40,23 +40,11 @@
 	font-style:oblique;
 }
 
-
-.sidebar aside nav a:link, .sidebar aside nav a:visited {
-	display: block;
-	border-bottom: 2px solid #FFDFBF;
-	padding: 10px;
-	text-decoration: none;
-	font-weight: bold;
-	margin: 5px;
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+	color:white;
+	background-color:#F47D31;
 }
 
-.sidebar aside nav a:hover {
-	color: white;
-	background-color: #F47D31;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
 
 /**
  * responsive design
