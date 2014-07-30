@@ -37,9 +37,7 @@
 	<script type="text/javascript" src="scripts/global/service/GlobalService.js"></script>
 	
 	<!-- Modules -->
-	<script type="text/javascript" src="scripts/module/controller/HomeCtrl.js"></script>
-	<script type="text/javascript" src="scripts/module/controller/MenuCtrl.js"></script>
-	<script type="text/javascript" src="scripts/module/controller/SideBarCtrl.js"></script>
+	<script type="text/javascript" src="scripts/module/controller/ProjectDetailCtrl.js"></script>
 
 	<!-- Config highLight js -->
 	<script type="text/javascript">
@@ -49,7 +47,7 @@
 	</script>
 </head>
 
-<body id="my-body">
+	<body id="my-body">
 	    <header>
 	      <h1>  
 	      	<div id="flags" align="right">
@@ -60,13 +58,20 @@
 	      	<img class="index-image" src="images/header-1.png"/>
 	      </h1>      
 		</header>
-
+	
+		<button class="button-mobile-menu" ng-click="collapse_menu=!collapse_menu" type="button" class="btn btn-lg">
+			<span class="glyphicon glyphicon-align-justify" style="color:#F47D31"></span>
+		</button>
+	
 		<div id="my-container">
 			<div class="nav-desktop">
-	          <a href="#/" name="#top">Home</a>
-	          <!--<a href="#/projects">Projects</a>-->
-	          <a href="#/about_me">About me</a>
-	          <a href="#/resume">Resume</a>
+				{{collapse_menu}}
+				<div collapse="collapse_menu">
+					  <a href="#/" name="#top">Home</a>
+			          <!--<a href="#/projects">Projects</a>-->
+			          <a href="#/about_me">About me</a>
+			          <a href="#/resume">Resume</a>
+				</div>
 	        </div>
 	      	<div id="included">
 	        	<div ng-view></div>

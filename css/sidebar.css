@@ -40,7 +40,12 @@
 	font-style:oblique;
 }
 
+.nav-pills>li>a{
+	font-size:10px;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+	font-size:12px;
 	color:white;
 	background-color:#F47D31;
 }
