@@ -14,10 +14,11 @@
 		var win = angular.element($window);
         win.bind("resize",function(e){
         	if(win[0].innerWidth<=1024){
-        		console.log('llll');
         		$scope.collapse_menu = true;
+        		$scope.$apply();
         	}else{
         		$scope.collapse_menu = false;
+        		$scope.$apply();
         	}
         });
 	}]);
