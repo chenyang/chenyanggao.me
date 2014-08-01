@@ -1,3 +1,28 @@
+header {
+	background-color:#333333;
+	padding:10px;
+	display:block;
+	color:#FFFFFF;
+	text-align:center;
+	width:100%;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	clear:both;
+}
+
+header h2 {
+	margin: 0px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+header p {
+	margin:0px;
+	padding:0px;
+}
+
 .home {
 	display: block;
 	width: 80%;
@@ -9,6 +34,11 @@
 
 .home .description-block {
 	height: 60%;
+}
+
+.home .description-block p {
+	line-height: 14px;
+	margin: 0px;
 }
 
 .home .keyword {
@@ -24,14 +54,16 @@
 }
 
 .home .keywords-block {
-	border-top: #999999;
+	line-height: 10px; border-top : #999999;
 	border-top-style: solid;
 	border-width: 1px;
 	float: left;
-	opacity: 0.2; margin : 0 auto;
+	opacity: 0.2;
+	margin: 0 auto;
 	height: 20%;
 	width: 100%;
 	margin: 0 auto;
+	border-top: #999999;
 }
 
 .home .keywords-block:hover {
@@ -126,7 +158,75 @@
 /**
  * responsive design
  */
- 
- 
- 
- 
+@media screen and (max-width:1279px) {
+	.home .project-show-image-off, .home .project-show-image-on{
+		width:45%;
+	}
+}
+@media screen and (min-width:1025px) and (max-width:1279px) {
+	.home{
+		width:80%;
+	}
+	.home>section>article{
+		width:47%;
+	}
+	.home .home-project h1{
+		font-size:14px;
+		font-weight:bold;
+	}
+		.home .keyword{
+		margin:2px;
+	}
+}
+@media screen and (min-width:770px) and (max-width:1024px) {
+	.home{
+		width:100%;
+	}
+	.home>section>article{
+		width:47%;
+	}
+	.home .home-project h1{
+		font-size:14px;
+		font-weight:bold;
+	}
+	.home .keywords-block {
+		display: none;
+	}
+}
+@media screen and (min-width:601px) and (max-width:769px) {
+	.home{
+		width:100%;
+	}
+	.home>section>article{
+		width:45%;
+	}
+	.home .home-project h1{
+		font-size:12px;
+		font-weight:bold;
+	}
+	.home .keywords-block {
+		display: none;
+	}
+	.home .project-show-image-off, .home .project-show-image-on{
+		height:auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.home{
+		width:100%;
+	}
+	.home>section>article{
+		width:95%;
+	}
+	.home .home-project h1{
+		font-size:12px;
+		font-weight:bold;
+	}
+	.home .keywords-block {
+		display: none;
+	}
+	.home .project-show-image-off, .home .project-show-image-on{
+		height:auto;
+	}
+}
