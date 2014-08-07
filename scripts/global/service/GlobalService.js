@@ -22,6 +22,4 @@
 				templateUrl:"views/project_detail.html"
 			 }
 			 ]);
-
-
 }());

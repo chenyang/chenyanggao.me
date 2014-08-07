@@ -5,6 +5,13 @@ mod.controller('ProjectDetailCtrl', ['$scope', '$routeParams', '$location', func
 	$scope.tabs =
 		[
 		 {
+			 'id':'michelin',
+			 'desc':'Michelin Floats',
+			 'content':'J2EE web dashboard development', 
+			 'link':'views/Michelin.html', 
+			 'active':false
+		 },
+		 {
 			 'id':'findevent', 
 			 'desc':'Music Event',
 			 'content':'Big Data and Semantic web application for music', 
