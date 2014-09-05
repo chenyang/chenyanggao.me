@@ -21,20 +21,20 @@
 
 #my-container {
 	margin:20px 40px 40px 40px;
-	background-color:#FDF3D9;
+	background-color:#313131;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 }
 
 #my-body {
-	background-color:#CCCCCC;
+	background-color:#313131;
 	font-family:Geneva,Arial,Helvetica,sans-serif;
 	margin: 0px auto;
 	max-width:1200px;
 	border:solid;
 	border-color:#FFFFFF;
-	background-image:url(../images/background.jpg);
+	/*background-image:url(../images/background.jpg);*/
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
@@ -93,7 +93,7 @@ footer {
 footer p {
 	font-size: 12px;
 	font-weight:800;
-	color: black;
+	color: #F47D31;
 	text-align:center;
 }
 

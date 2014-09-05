@@ -6,7 +6,7 @@ mod.controller('ProjectDetailCtrl', ['$scope', '$routeParams', '$location', func
 		[
 		 {
 			 'id':'michelin',
-			 'desc':'Michelin Floats',
+			 'desc':'MICHELIN® solutions',
 			 'content':'J2EE web dashboard development', 
 			 'link':'views/Michelin.html', 
 			 'active':false
