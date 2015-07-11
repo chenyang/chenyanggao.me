@@ -130,7 +130,6 @@ header p {
 		height: 300px;
 		width:100%;
 	}
-	
 	.home article{
 		height:575px;
 	}
@@ -160,6 +159,9 @@ header p {
 	.home {
 		width:100%;
 	}
+	.home .keywords-block {
+		display: none;
+	}
 	.home .home-project h1{
 		font-size:12px;
 		font-weight:bold;
@@ -179,7 +181,7 @@ header p {
 		font-weight:bold;
 	}
 	.home .keywords-block {
-		//display: none;
+		display: none;
 	}
 	.home .project-show-image-off, .home .project-show-image-on{
 		height:auto;
