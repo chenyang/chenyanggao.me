@@ -20,7 +20,7 @@
 }
 
 #my-container {
-	margin:20px 40px 40px 40px;
+	padding:10px;
 	background-color:#313131;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
@@ -124,6 +124,13 @@ footer p {
 		display:block;
 		font-size:2em;
 	}
+	
+	@media screen and (max-width:600px){
+		 #my-container {
+			padding:0px;
+		}
+	}
+	
  }
  
 
