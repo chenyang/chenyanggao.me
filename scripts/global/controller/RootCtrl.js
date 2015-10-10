@@ -3,7 +3,7 @@
 
 	var mod = angular.module('global.controller');
 
-	mod.controller('RootCtrl', ['$scope', '$window', function($scope, $window){
+	mod.controller('RootCtrl', ['$scope', '$window', '$location', function($scope, $window, $location){
 
 		//by default collapsed is false
 		$scope.collapse_menu = false;
@@ -21,5 +21,9 @@
         		$scope.$apply();
         	}
         });
+        
+        $scope.directLink = function(url){
+        	$location.path(url);
+        }
 	}]);
 }());
