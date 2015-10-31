@@ -1,0 +1,38 @@
+<div class="myprofile" ng-controller="MyProfileCtrl">
+	<ul class="list-group">
+	  <li class="list-group-item">
+	  	<div class="photo text-center">	  		
+	  		<img class="img-with-border" ng-src="{{userInfo.imgUrl}}" width="100px">	  		
+	  	</div>
+	  	<div class="photo text-center" ng-show="userInfo.isVIP">	  		
+	  		<img src="images/user/vip.png" width="30px">	  		
+	  	</div>
+	  </li>
+	   <li class="list-group-item">
+	  	<div class="text-center">
+	  		<a href="#/profileDetail">个人账号信息<span class="glyphicon glyphicon-menu-right"></span></a> 
+	  	</div>
+	  </li>
+	  <li class="list-group-item">
+	  	<div class="text-center">
+	  		<a href="#/myPub">我的发布<span class="glyphicon glyphicon-menu-right"></span></a> 
+	  	</div>
+	  </li>
+	   <li class="list-group-item">
+	  	<div class="text-center">
+	  		<a href="#/myFavorite">我的收藏<span class="glyphicon glyphicon-menu-right"></span></a> 
+	  	</div>
+	  </li>
+	   <li class="list-group-item">
+	  	<div class="text-center">
+	  		<a href="#/myBought">我的购买记录<span class="glyphicon glyphicon-menu-right"></span></a> 
+	  	</div>
+	  </li>
+	   <li ng-show="!userInfo.isVIP" class="list-group-item">
+	  	<div class="text-center">
+	  		<a href="#/myApply">申请加VIP<span class="glyphicon glyphicon-menu-right"></span></a>
+	  	</div>
+	  </li>
+	</ul>
+
+</div>

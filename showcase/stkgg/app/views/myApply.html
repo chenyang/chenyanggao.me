@@ -1,0 +1,61 @@
+<div class="myApply" ng-controller="MyApplyCtrl">
+	<div class="well">
+		<form ng-submit="applyVIP()">
+			<ul class="list-group">
+			  <li class="list-group-item">
+			 	<label>申请加V： {{userInfo.nickName}}</label>
+			  </li>
+			  <li class="list-group-item">
+			 	<div class="form-group text-center">
+			   		 <img ng-src="{{userInfo.imgUrl}}" width="80px">
+				</div>
+			  </li>
+			  <li class="list-group-item">
+		  		<div class="form-group">
+					<label>实际姓名:</label><input type="text" class="form-control" ng-model="userInfo.realName">
+				</div>
+				<div class="form-group">
+					<label>工作单位:</label><input type="text" class="form-control" ng-model="userInfo.company">
+				</div>
+				<div class="form-group">
+					<label>联系方式 (邮箱):</label><input type="text" class="form-control" ng-model="userInfo.contact">
+				</div>
+				<div class="form-group">
+					<label>联系方式 (电话):</label><input type="text" class="form-control" ng-model="userInfo.contact2">
+				</div>
+				<div class="form-group">
+					<label>学历:</label>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+					    	<span ng-show="userInfo.education==''">请选择最高学历 </span>
+					    	{{userInfo.education}}<span class="caret"></span>
+					  </button>
+						<ul class="dropdown-menu">
+						    <li><a href="" ng-click="userInfo.education='大学';">大学</a></li>
+						    <li><a href="" ng-click="userInfo.education='研究生';">研究生</a></li>
+						    <li><a href="" ng-click="userInfo.education='博士';">博士</a></li>
+						    <li><a href="" ng-click="userInfo.education='博士后';">博士后</a></li>
+					 	 </ul>
+					</div> 
+				</div>
+			  </li>
+			   <li class="list-group-item">
+		  		 <div class="form-group">
+			  		<label>性别: {{userInfo.gender}}</label>			  	
+				</div>
+				<div class="form-group">
+					<label>地区：{{userInfo.address}}</label> 
+				</div>
+				<div class="form-group">
+					<label>生日：{{userInfo.birthday}}</label>
+				</div>
+			  </li>
+			   <li class="list-group-item">
+		  		<div class="form-group">
+					<button type="submit" class="btn btn-danger">提交申请</button>
+				</div>
+			  </li>
+			</ul>
+		</form>
+	</div>
+</div>

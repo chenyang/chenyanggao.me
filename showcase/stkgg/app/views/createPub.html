@@ -1,0 +1,84 @@
+<div class="createPub" ng-controller="CreatePubCtrl">
+	<div class="well">
+		<form ng-submit="submit()">
+		  <div class="form-group">
+		  	<label>选择股票</label>
+		  	<div class="input-group">
+		      <input type="text" class="form-control" placeholder="搜索(至少输入3位)"
+		      ng-model="pubInfo.stock"
+		      typeahead="stock as (stock.name+' ('+stock.code+' )') for stock in searchStock($viewValue)" 
+		      typeahead-loading="loading" 
+		      typeahead-no-results="noResults" 
+		      typeahead-min-length="3"
+		      >
+		      <span class="input-group-btn">
+		        <button class="btn btn-info" type="button"><span class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<div ng-show="pubInfo.stock==null">
+		  		尚未选择股票
+		  	</div>
+		  	<div ng-show="pubInfo.stock!=null">
+		  		选择的股票： {{pubInfo.stock.name}} ({{pubInfo.stock.code}})
+		  	</div>
+		  	<span ng-show="loading" class="glyphicon glyphicon-refresh" style="font-size:12px">正在查找。。</span>
+		    <div ng-show="noResults">
+		      <i class="glyphicon glyphicon-remove"></i> 没有结果
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<label>pub名称：</label>
+		  	<input type="text" class="form-control" ng-model="pubInfo.pubName" required>
+		  </div>
+		  <div class="form-group">
+		    <label>上传图片 (可选)</label>  
+		  	<div flow-init flow-file-added="uploadImg( $file, $event, $flow)">
+		  		<span class="btn btn-info" ng-hide="$flow.files.length" flow-btn flow-attrs="{accept:'image/*'}">选择图片</span>
+		  		<span class="btn btn-danger" ng-show="$flow.files.length" ng-click="$flow.cancel()">删除</span>
+			    <p class="help-block">图片格式仅支持PNG, GIF, JPG</p>
+			    
+			    <label>预览</label>
+			    <div class="thumbnail" ng-show="$flow.files.length" style="width:100px">
+				   <img flow-img="$flow.files[0]"/>
+				</div>
+			</div>
+		  </div>
+		  <div class="form-group">
+		  	<label>添加描述</label>
+		  	<textarea class="form-control" rows="4" placeholder="Pub描述" ng-model="pubInfo.desc"></textarea>
+		  </div>
+		  <div class="form-group">
+		  		<label>选择收费档</label>
+			  	<div class="radio">
+				  <label>
+				    <input type="radio" value="1" ng-model="pubInfo.price">
+				    <span>1元/周</span>
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" value="5" ng-model="pubInfo.price">
+					<span>5元/周</span>		 
+				 </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" value="10" ng-model="pubInfo.price">
+				    <span>10元/周</span>
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" value="0" ng-model="pubInfo.price">
+				    <span>免费</span>
+				  </label>
+				</div>
+			</div>
+		  
+		  <button type="submit" class="btn btn-primary">创建</button>
+		</form>
+	</div>	
+	
+</div>

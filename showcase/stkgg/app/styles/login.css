@@ -1,0 +1,135 @@
+.login-wrapper{
+	background-image: url('../images/background.jpg');
+	background-size: 100% 100%;
+	margin-top:50px;
+	padding-top:80px;
+	background-repeat: no-repeat;
+	height:600px;
+}
+.login-wrapper .appendix{
+	width:40%;
+	margin:auto;
+}
+
+/**login **/
+.login{
+	width:40%;
+	margin:auto;
+	-moz-box-shadow: 0 8px 5px 0 #000;
+    -webkit-box-shadow: 0 8px 5px 0 #000;
+}
+.login .well{
+	border:0px;
+	background-color:rgba(245, 245, 245, 0.45);
+}
+.login .form-control{
+	border:0px;
+}
+.login .form-login input{
+	height:80px;
+}
+.login .form-register input{
+	height:58px;
+}
+.login .btn-group{
+	width:100%;
+}
+.login .form-login button:nth-of-type(1){
+	width:90%;
+	height:58px;
+	font-size:18px;
+}
+.login .form-login button:nth-of-type(2){
+	width:10%;
+	height:58px;
+}
+.login .form-register button:nth-of-type(1){
+	width:100%;
+	height:58px;
+}
+
+.login .validationCode .btn{
+	padding:2px 5px;
+	margin-bottom:5px;
+}
+.login .validationCode input{
+	height:40px;
+	padding:5px;
+}
+
+.login .third-party-login h4{
+	color:#000;
+	font-size:14px;
+}
+.login .third-party-login .row{
+	padding:0px 30px;
+}
+.login .third-party-login .thumbnail{
+	border:0px;
+	padding:5px;
+	background-color:transparent;
+}
+.login .third-party-login .thumbnail .caption{
+	color:#000;
+}
+.login .third-party-login .thumbnail img{
+	 border-radius: 50%;
+}
+
+/** reset color for tabs **/
+.login .nav-pills>li>a{
+	height:60px;
+	padding-top:20px;
+	font-size:16px;
+}
+/** active tab**/
+/** first nav tab**/
+.login .nav-pills>li:nth-of-type(1).active>a{
+	background-color:#CE1919;
+}
+.login .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color:#fff;
+	background-color:#337ab7;
+    -moz-box-shadow: 0 0 12px -3px #999;
+    -webkit-box-shadow: 0 0 12px -3px #999;
+}
+/** non-active tab**/
+.login .nav>li>a{
+    -webkit-box-sizing:none;
+    -moz-box-sizing: none;
+    border-radius:0px;
+    background-color:rgba(240, 240, 240, 0.8);
+	color:#000;
+}
+
+/*responsive desing*/
+@media all and (min-width:1024px){
+	.login .third-party-login .thumbnail{
+		border:0px;
+		padding:10px 25px 0 25px;
+	}
+}
+@media all and (min-width:720px) and (max-width:1024px) {
+	.login{
+		width:50%;
+	}
+	.login .third-party-login .row{
+		padding:0px 15px;
+	}
+}
+@media all and (min-width:470px) and (max-width:720px) {
+	.login, .login-wrapper .appendix{
+		width:90%;
+	}
+	.login .third-party-login .row{
+		padding:0px 15px;
+	}
+}
+@media all and (max-width:470px){
+	.login, .login-wrapper .appendix{
+		width:90%;
+	}
+	.login .third-party-login [class^="col-"]{
+		padding:2px;
+	}
+}

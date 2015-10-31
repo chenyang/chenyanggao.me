@@ -1,0 +1,15 @@
+{
+	"result":"success", 
+	"reason": null, 
+	"prediction":{
+		 "sessionId":"IUWID987398OSI",
+		 "pubId":1, 
+		 "time":7, 
+		 "minVal":-2,
+		 "maxVal":3.5, 
+		 "minPct":15, 
+		 "maxPct":20,  
+		 "cmt":"预测跌幅较大，建议抛售", 
+		 "lastModifiedTime":"2015-07-01 15:37:28"
+	} 
+}

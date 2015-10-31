@@ -1,0 +1,12 @@
+{
+	"result":"success",
+	"reason": null, 
+	"pubId":12, 
+	"sessionId":"IUWID987398OSI",
+	"stockId":12329, 
+	"type":1,
+	"imageUrl": null, 
+	"desc":"一段描述", 
+	"price":0,
+	"pubName":"孤注一掷"
+}

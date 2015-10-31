@@ -1,0 +1,65 @@
+<div class="feed" ng-controller="FeedCtrl">
+	<div class="container-fluid">
+		<div ng-repeat="feed in feeds">
+			<!-- row for tipFeed -->
+			<div class="row" ng-show="feed.type=='tipFeed'">
+				<div class="user-block col-xs-2 text-center">
+					<img ng-src="{{feed.imgUrl}}" class="photo">
+				</div>
+				<div class="feed-block col-xs-10">
+					<div>
+						<span class="name">{{feed.pubName}}</span>
+						<span class="action">{{feed.pubOwner}}发表了新的Tip</span>
+					</div>
+					<div class="content">
+						<b>{{feed.newsTitle}}</b><br/>
+						<span>{{feed.tipContent}}</span>
+					</div>
+					
+					<div class="well">
+						<div>
+							{{feed.newsAbstract}}
+						</div>
+						<a href="#/newsContent/{{feed.newsId}}">点击查看相关新闻详情</a>
+					</div>
+					<div class="footer">
+						<div>
+							<span class="text-left">发表于{{feed.time}}</span>
+						</div>
+						<div class="text-right comment-icon">
+							<span ng-click="addComment(feed, 1)" style="margin-right:5px" class="label label-danger">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+								<span>赞{{feed.nbLikes}}</span>
+							</span>
+							<span ng-click="addComment(feed, 0)" style="margin-right:5px" class="label label-default">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+								<span>踩{{feed.nbDislikes}}</span>
+							</span>
+							
+							<span ng-click="gotoComment(feed)" class="label label-primary">相关评论 {{feed.nbComments}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row for predictionFeed -->
+			<div class="row" ng-show="feed.type=='predictionFeed'">
+				<div class="user-block col-xs-2 text-center">
+					<img ng-src="{{feed.imgUrl}}" class="photo">
+				</div>
+				<div class="feed-block col-xs-10">
+					<div>
+						<span class="name">{{feed.pubName}}</span>
+						<span class="action">{{feed.pubOwner}}发表了新的预测</span>
+					</div>
+					<div class="content">
+						<span>{{feed.predictionContent}}</span><br/>	
+					</div>
+					<div class="footer">
+						发表于{{feed.time}}
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
