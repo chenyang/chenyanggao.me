@@ -1,0 +1,22 @@
+<div ng-controller="NewsCtrl">
+	<div ng-repeat="news in newsList" class="list-group">
+	  <div class="list-group-item">
+	  	<div class="clearfix" style="padding:10px">
+	  		<div class="pull-left list-group-item-heading active">
+	  			<b>{{news.newsDate}}</b><br>
+	  			<a href="#/newsContent/{{news.newsId}}"><span>点击查看新闻全文</span></a>
+	  		</div>
+	  		<button style="padding:2px 8px" ng-click="bookNews(news, false)" ng-show="news.isBooked" class="pull-right btn btn-danger">取消预订</button>
+	  		<button style="padding:2px 8px" ng-click="bookNews(news, true)" ng-show="!news.isBooked" class="pull-right btn btn-success">预订新闻</button>
+	  	</div>
+	  	
+	    <span class="list-group-item-heading">{{news.newsTitle}}</span>
+	    <p class="list-group-item-text">
+	    	<pre>
+	    		{{news.newsAbstract}}
+	    	</pre>
+	    </p>
+	  </div>
+	</div>
+</div>
+

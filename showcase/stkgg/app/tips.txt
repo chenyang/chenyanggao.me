@@ -1,0 +1,6 @@
+cookies:
+
+- cookieUserProfile:obj
+
+- cookieAllVisitedPubId:obj
+

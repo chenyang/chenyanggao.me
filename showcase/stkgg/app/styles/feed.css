@@ -1,0 +1,37 @@
+
+.feed .row{
+	border-bottom:1px solid #ccc;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.feed .user-block .photo{
+	width:35px;
+	height:35px;
+}
+
+.feed .feed-block .name{
+	font-size:12px;
+	color:#337AB7;
+}
+
+.feed .feed-block .action{
+	margin-left:2px;
+	font-size:10px;
+	color:#CCC;
+}
+
+.feed .feed-block .content{
+	padding:5px;
+}
+
+.feed .feed-block .footer{
+	margin-left:2px;
+	font-size:10px;
+	color:#4F4C4C;
+	
+}
+.feed .feed-block .footer .comment-icon{
+	font-size:14px;
+	margin-right:2px;
+}

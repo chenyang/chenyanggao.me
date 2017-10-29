@@ -1,0 +1,58 @@
+{
+	"result":"success", 
+	"reason":null, 
+	"feeds":[
+		{
+			"type":"tipFeed", 
+			"time":"2015-07-01 15:30", 
+			"pubId":3, 
+			"pubName":"股神小吧的Pub", 
+			"pubOwner": "股神小吧", 
+			"imgUrl":"images/3rd/somua.jpg",
+			"tipId":1, 
+			"nbComments":7, 
+			"nbLikes":1, 
+			"nbDislikes":3, 
+			"newsId":2, 
+			"newsTitle":"消息称国务院将特批银行持券商牌照试点", 
+			"newsAbstract":"伴随着银行混合所有制改革拉开大幕，混业经营备受关注，放开券商牌照的问题如一把悬在头上的达摩克利斯之剑。日前，《经济参考报》记者从知情人士处获悉，《商业银行法》修改的内容里，除了取消存贷比外，更重要的是...", 
+			"tipContent":"伴随着银行混合所有制改革拉开大幕，混业经营备受关注，放开券商牌照的问题如一把悬在头上的达摩克利斯之剑"
+		}, 
+		{
+			"type":"tipFeed", 
+			"time":"2015-07-01 15:30", 
+			"pubId":3, 
+			"pubName":"股神小吧的Pub", 
+			"pubOwner": "股神小吧", 
+			"imgUrl":"images/3rd/somua.jpg",
+			"tipId":1,
+			"nbComments":7, 
+			"nbLikes":1, 
+			"nbDislikes":2, 
+			"newsId":2, 
+			"newsTitle":"消息称国务院将特批银行持券商牌照试点", 
+			"newsAbstract":"伴随着银行混合所有制改革拉开大幕，混业经营备受关注，放开券商牌照的问题如一把悬在头上的达摩克利斯之剑。日前，《经济参考报》记者从知情人士处获悉，《商业银行法》修改的内容里，除了取消存贷比外，更重要的是...", 
+			"tipContent":"伴随着银行混合所有制改革拉开大幕，混业经营备受关注，放开券商牌照的问题如一把悬在头上的达摩克利斯之剑"
+		}, 
+		{
+			"type":"predictionFeed", 
+			"time":"2015-07-01 15:30", 
+			"pubOwner": "股神小吧", 
+			"imgUrl":"images/3rd/somua.jpg",
+			"pubName":"股神小吧的Pub", 
+			"pubId":3, 
+			"predictionId":3,
+			"predictionContent":"预测将要大涨， 建议持股等待"
+		}, 
+		{
+			"type":"predictionFeed", 
+			"time":"2015-07-01 15:30", 
+			"pubOwner": "股神小吧", 
+			"imgUrl":"images/3rd/somua.jpg",
+			"pubName":"股神小吧的Pub", 
+			"pubId":3, 
+			"predictionId":3,
+			"predictionContent":"预测将要大涨， 建议持股等待2"
+		}
+	]
+}
