@@ -1,0 +1,134 @@
+/* html5 css file, Copyright ?Pro HTML5 Programming */
+
+/**general styles**/
+.backToTop{
+	float:right;
+	margin-right:25px;
+	color:#A6A6FF;
+}
+#flags{
+	margin-right:10px;
+}
+
+#project_line{
+	alignment-baseline:central;
+	background-color:#FFFF66;
+}
+#included{
+	width:100%;
+	margin:auto;
+}
+
+#my-container {
+	padding:10px;
+	background-color:#313131;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+#my-body {
+	background-color:#313131;
+	font-family:Geneva,Arial,Helvetica,sans-serif;
+	margin: 0px auto;
+	max-width:1200px;
+	border:solid;
+	border-color:#FFFFFF;
+	/*background-image:url(../images/background.jpg);*/
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+.nav-mobile :hover{
+	cursor:pointer;
+}
+
+.nav-mobile{
+	display: none;
+}
+
+.nav-desktop {
+	display:block;
+	text-align:center;
+	width:20%;
+	float:left;
+	height:100%;
+}
+
+.nav-desktop a:link, .nav-desktop a:visited {
+	display: block;
+	border-bottom: 3px solid #fff;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.nav-desktop a:hover {
+	color: white;
+	background-color: #F47D31;
+    opacity:1;
+    -webkit-transition: background-color .5s ease-in-out;
+	-moz-transition: background-color .5s ease-in-out;
+	-ms-transition: background-color .5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out;
+	transition: background-color .5s ease-in-out;
+}
+
+.nav-desktop h3 {
+	margin: 15px;
+	color: white;
+}
+
+footer {
+	clear: both;	
+	display: block;
+	/*background-color: #F47D31;*/
+	color:#FFFFFF;
+	text-align:center;
+	padding: 2px;
+}
+
+footer p {
+	font-size: 12px;
+	font-weight:800;
+	color: #F47D31;
+	text-align:center;
+}
+
+/**
+ * responsive design
+ */
+ .button-mobile-menu{
+ 	display:none;
+ }
+ 
+ @media screen and (max-width:1024px){
+ 	.nav-desktop {
+		text-align:center;
+		width:100%;
+		clear:both;
+	}
+	.nav-mobile{
+		display:block;
+	}
+	.button-mobile-menu{
+		display:block;
+		float:right;
+		border:none;
+		background:transparent;
+	}
+	.button-mobile-menu>span{
+		background-color:transparent;
+		display:block;
+		font-size:2em;
+	}
+	
+	@media screen and (max-width:600px){
+		 #my-container {
+			padding:0px;
+		}
+	}
+	
+ }

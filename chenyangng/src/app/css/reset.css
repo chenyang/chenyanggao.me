@@ -1,0 +1,36 @@
+p{
+	margin: 10px;
+}
+
+h1 {
+	font-size: 72px;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 0px;
+	text-align:center;
+	color: #F47D31;
+}
+
+h3 {
+	font-size: 18px;
+	margin: 0px;
+	text-align:center;
+	color: #F47D31;
+}
+
+/* links */
+a{
+	color: #F47D31;
+}
+
+.index-image{
+	width:100%;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+	cursor:pointer;
+}

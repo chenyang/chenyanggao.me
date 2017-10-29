@@ -1,0 +1,189 @@
+header {
+	background-color:#333333;
+	padding:10px;
+	display:block;
+	color:#FFFFFF;
+	text-align:center;
+	width:100%;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	clear:both;
+}
+
+header h2 {
+	margin: 0px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+
+header p {
+	margin:0px;
+	padding:0px;
+}
+
+.home {
+	display: block;
+	width: 80%;
+	float: left;
+	font-size: 14px;
+	color: #666666;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.home .thumbnail .caption{
+	height:150px;
+}
+
+.home .thumbnail .caption p{
+	font-size: 12px;
+	margin: 0px;
+}
+
+.home .keyword {
+	color: #FFFFFF;
+	background-color: #666666;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	float:left;
+}
+
+.home .keywords-block {
+	line-height: 10px; border-top : #999999;
+	border-top-style: solid;
+	border-width: 1px;
+	opacity: 0.2;
+	margin: 0 auto;
+	height: 20%;
+	width: 100%;
+	margin: 0 auto;
+	font-size:12px;
+	border-top: #999999;
+	float:left;
+}
+
+.home .keywords-block:hover {
+	opacity: 1.0;
+	-webkit-transition: opacity .35s ease-in-out;
+	-moz-transition: opacity .35s ease-in-out;
+	-ms-transition: opacity .35s ease-in-out;
+	-o-transition: opacity .35s ease-in-out;
+	transition: opacity .35s ease-in-out;
+}
+
+.home .project-image {
+	padding:10px;
+}
+
+.home .home-project {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+.home article {
+	background-color: #F9F9F9;
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.home article header {
+	text-align: center;
+	background-color: #666666;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+.home article footer {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.home article h1 {
+	font-size: 18px;
+}
+
+.home article a {
+	float: right;
+	margin-right: 8px;
+	font-size: 12px;
+	margin: 2px;
+}
+
+/**
+ * responsive design
+ */
+@media screen and (min-width:1280px) {
+	.home .project-image {
+		height: 300px;
+		width:100%;
+	}
+	.home article{
+		height:575px;
+	}
+}
+ 
+@media screen and (min-width:1025px) and (max-width:1279px) {
+
+	.home .home-project h1{
+		font-size:14px;
+		font-weight:bold;
+	}
+	.home .keyword{
+		margin:2px;
+	}
+}
+@media screen and (min-width:770px) and (max-width:1024px) {
+	.home {
+		width:100%;
+	}
+	.home .home-project h1{
+		font-size:14px;
+		font-weight:bold;
+	}
+}
+@media screen and (min-width:601px) and (max-width:769px) {
+	
+	.home {
+		width:100%;
+	}
+	.home .keywords-block {
+		display: none;
+	}
+	.home .home-project h1{
+		font-size:12px;
+		font-weight:bold;
+	}
+	.home .project-show-image-off, .home .project-show-image-on{
+		height:auto;
+	}
+}
+
+@media screen and (max-width:600px) {
+	
+	.home {
+		width:100%;
+	}
+	.home .home-project h1{
+		font-size:12px;
+		font-weight:bold;
+	}
+	.home .keywords-block {
+		display: none;
+	}
+	.home .project-show-image-off, .home .project-show-image-on{
+		height:auto;
+	}
+}

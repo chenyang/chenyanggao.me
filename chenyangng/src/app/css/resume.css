@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.block-CV a{
+	float:left;
+	color:#F47D31;
+	alignment-adjust:central;
+	width:17%;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.block-CV b{
+	font-size:14px;
+}
+
+.block-CV a :hover{
+	background-color:#999999;
+	color:#FFFFFF;
+}
+
+.align_left{
+	float:left;
+}
+
+.align_right{
+float:right;
+margin-right:10px;
+}
+
+.resume{
+	display:block;
+	width:60%;
+	float:left;
+	font-size:12px;
+	color:#666666;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+article {
+	background-color:#F7F7F7;
+	display:block;
+	margin: 10px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+article header {
+	background-color:#CCCCCC;
+	display:block;
+	color:#FFFFFF;
+	text-align:center;
+	width:100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+article footer {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+article h1 {
+	font-size: 18px;
+	padding:5px;
+	margin:10px;
+}
+
+/*skills part*/
+aside {
+	display:block;
+	width:20%;
+	float:right;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.skill-label {
+	font-size:14px;
+	font-weight:bold;
+	margin: 15px;
+	padding:5px;
+	color:#333333;
+	background-color: #F47D31;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+aside span{
+	font-size:18px;
+	color:#999999;
+	font-weight: bold;
+}
+
+aside #skills{
+	margin-left:15px;
+}
+
+aside #courses{
+	margin-left:15px;
+	color:#999999;
+	font-weight: bold;
+}
+
+
+aside ul{
+	-webkit-padding-start:0px;
+}
+
+aside ul li {
+	color:#999999;
+	font-weight: bold;
+	list-style:none;
+}
+	
+.indicator{
+	float:right;
+	margin-right:25px;
+}
+
+#profession .job-title{
+	padding-left:10px;
+	font-style:italic;
+}
+
+/**
+ * responsive design
+ */ 
+@media screen and (max-width:1024px){
+	.skill-label, aside span{
+		font-size: 14px;
+	}
+	.block-CV, aside{
+		display:none;
+	}
+	.resume{
+		width:100%;
+	}
+	#skills span{
+		font-size: 14px;
+	}
+}
+
