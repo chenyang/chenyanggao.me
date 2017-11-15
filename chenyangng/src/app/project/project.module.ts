@@ -1,20 +1,17 @@
 import { SharedModule } from '../shared/shared.module';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { ProjectListComponent } from './project-list/project-list.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   imports: [
     SharedModule
   ],
   declarations: [
-    ProjectListComponent, 
-    ProjectDetailComponent
-  ], 
+     ProjectCardComponent
+  ],
   exports: [
-    ProjectListComponent, 
-    ProjectDetailComponent
+    ProjectCardComponent
   ]
 })
 export class ProjectModule { }

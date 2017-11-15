@@ -10,7 +10,7 @@ export class ProjectSchema {
     content: string;
     link: string;
     active: boolean;
- 
+
     constructor(args: ProjectSchema) {
     this.id = args.id;
     this.desc = args.desc;
@@ -22,4 +22,13 @@ export class ProjectSchema {
 
 export class Project extends ProjectSchema {
   // adding some additional functions for user
+}
+
+export class ProjectCard extends ProjectSchema {
+    titleDesc: string;
+    headerDesc: string;
+    devDesc: string;
+    imgUrl: string;
+    descParagraph: string;
+    keyWords: Array<string>;
 }

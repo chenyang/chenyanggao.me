@@ -1,0 +1,25 @@
+<div class="home">
+  <div class="row">
+    <div *ngFor="let project of projectList" class="home-project col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <article class="thumbnail" (click)="directLink(project.link)">
+        <header>
+          <div align="left" style="font-size:10px">{{project.titleDesc}}}
+            <a [href]="project.link">Details</a>
+          </div>
+          <br/>
+          <h1>{{project.headerDesc}}
+            <br>{{project.devDesc}}</h1>
+        </header>
+        <img [src]="project.imgUrl" class="project-image">
+        <div class="caption">
+          <p>
+            {{project.descParagraph}}
+          </p>
+          <div class="keywords-block">
+            <span *ngFor="let keyword of project.keyWords" class="keyword">{{keyword}}</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>

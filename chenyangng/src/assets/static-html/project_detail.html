@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="css/projects_detail.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<div ng-controller="ProjectDetailCtrl">
+  <div id="projects_detail">
+    <section>
+      <div ng-include="selectedUrl"></div>
+    </section>
+  </div>
+  <div class="sidebar">
+    <aside>
+      <h3>PROJECTS</h3>
+      <tabset vertical="true" type="pills">
+        <tab ng-repeat="tab in tabs" ng-click="selectTab(tab.id)" active="tab.active">
+          <tab-heading>
+            <b>{{tab.desc}}
+              <br/>---{{tab.content}}</b>
+          </tab-heading>
+        </tab>
+      </tabset>
+    </aside>
+  </div>
+</div>

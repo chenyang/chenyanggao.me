@@ -2,19 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ProjectListComponent } from './project/project-list/project-list.component';
-import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
+import { ProjectCardComponent } from './project/project-card/project-card.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectListComponent,
-    ProjectDetailComponent
+    ProjectCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+  ],
+  exports: [
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+   title = "GAO CHENYANG PORTFOLIO SITE";
+}

@@ -1,0 +1,170 @@
+<link rel="stylesheet" href="css/projects_detail.css">
+<!---div projects_left, show of projects--->
+<div>
+  <section>
+    <article class="article_left">
+      <div class="project_description">
+        <h2>
+          SLAB: Java based UM2 Time Scheduling System
+        </h2>
+        <img src="images/projects_images/SLAB.png" width="160" height="100" align="right" style="margin-top:10px;" />
+        <p>
+          Our team of 4 worked out a Java Swing based application for UM2 (University of Montpelier 2) time scheduling system. Worked
+          with our client, we started from requirement analysis, UML design, PL/SQL implementation of Oracle and Java Swing
+          programming works and finally with JUnit test. I was totally responsible for Java Swing Programming.
+        </p>
+      </div>
+
+      <br/>
+      <br/>
+      <div class="project_precision">
+        <header>Overview</header>
+        <p>
+          This project was a final project of "Software Engineering" course and this project lasted between 2 semesters. The aim of
+          this project was to help the university (University of Montpellier 2) to establish a Java based time planning system
+          and help to deepen students' software engineering concepts and skills. The project composed of system requirement
+          analysis, UML development, PL/SQL implementation, software engineering of Java and test phase using JUit.
+
+        </p>
+        <header>Requirement Analysis</header>
+        <p>
+          At the beginning of october, our team participated meetings with our demandeur, who were university staffs and the professors
+          from UM2. After the functionality discussion, we realized that the project scope was wide that our application
+          would be used in the whole university, which means all staffs and all components would be taken into consideration.
+          The aim of the application was to help staff (department administrators, department supervisors or professors)
+          to consult and manage their teaching time.
+        </p>
+
+        <p>
+          The picture below shows 2 use cases: a use case of teacher and a use case of department supervisor. More details please visit
+          shared resource
+          <a href="https://github.com/chenyang/Project_SLAB/tree/master/ProjetUML">on Github</a>.
+        </p>
+
+        <div class="image" style="clear:both">
+          <div class="project_show_image" style="float:left">
+            <a href="images/details_images/uml_05.jpg" class="highslide" onclick="return hs.expand(this)">
+              <img src="images/details_images/uml_05.jpg" alt="Highslide JS" title="Click to enlarge" width="190" height="140"
+              />
+            </a>
+            <div>Use case for professor</div>
+          </div>
+
+          <div class="project_show_image" style="float:left">
+            <a href="images/details_images/uml_06.jpg" class="highslide" onclick="return hs.expand(this)">
+              <img src="images/details_images/uml_06.jpg" alt="Highslide JS" title="Click to enlarge" width="190" height="140"
+              />
+            </a>
+            <div>Use case for department supervisor</div>
+          </div>
+        </div>
+
+        <header>UML Development</header>
+        <p>
+          During the project, we have created and established many UML modules, included UML object diagram, class diagrams, sequence
+          diagram, activity diagram and state machine diagram. During the project, I created class diagram and participated
+          in sequence diagram and activity diagram creation. Image below shows a final result of UML class diagram of the
+          whole system. More details on
+          <a href="https://github.com/chenyang/Project_SLAB/tree/master/ProjetUML">Github</a>
+        </p>
+        <div class="image" style="clear:both">
+
+          <div class="project_show_image">
+            <a href="images/details_images/uml_01.jpg" class="highslide" onclick="return hs.expand(this)">
+              <img src="images/details_images/uml_01.jpg" alt="Highslide JS" title="Click to enlarge" width="190" height="140"
+              />
+            </a>
+            <div>Use case for professor</div>
+          </div>
+        </div>
+
+
+        <header>Database design and implementation</header>
+        <p>
+          At this phase, we have chosen Oracle 10g as our database and we created procedured SQL and triggers to update and insert
+          data from the UI. During the project, I did not much participated in the Trigger implementation but on the contrary,
+          I held the full responsiblity of UI (Java Swing) development.
+        </p>
+        <header>System Modeling and Design</header>
+
+        <p>
+          Reviewing the project development, we have spent at least 30% of time on the system modeling and UI design. The design pattern
+          we have chosen was Factory, Singleton and Facade. We have divided our system into different modules and for each
+          module we had specific functionalities to develop. I was involved in the system design pattern choosing, architecture
+          with coordination with database and also UI flow. Pictures below show some exemple of this stage we have developped.
+        </p>
+
+        <div class="image" style="clear:both">
+
+          <div class="project_show_image" style="float:left">
+            <a href="images/details_images/uml_02.jpg" class="highslide" onclick="return hs.expand(this)">
+              <img src="images/details_images/uml_02.jpg" alt="Highslide JS" title="Click to enlarge" width="190" height="140"
+              />
+            </a>
+            <div>Final software architecture</div>
+          </div>
+
+          <div class="project_show_image" style="float:left">
+            <a href="images/details_images/uml_03.jpg" class="highslide" onclick="return hs.expand(this)">
+              <img src="images/details_images/uml_03.jpg" alt="Highslide JS" title="Click to enlarge" width="190" height="140"
+              />
+            </a>
+            <div>Sample design of Planning choosing page</div>
+          </div>
+        </div>
+
+        <header>Software implementation</header>
+        <p>
+          During this phase, our team of four seperated the task and I was totally responsible for front-end Java Swing and some DAO
+          development. I created functionalities in the Facade and used them to communicate with bunisess logic layer classes.
+          I did not participated in the database development while we solved problems together with database developer. For
+          source code, they are also vailable on
+          <a href="https://github.com/chenyang/Project_SLAB/tree/master/ProjetUML">Github</a>.
+        </p>
+
+        <header>Test & Final Result</header>
+        Last phase was usibility test and I created some test case in JUnit.
+        <a href="https://github.com/chenyang/Project_SLAB/tree/master/ProjetUML/final/Slab">Please visit Github to see more details</a>.
+
+
+
+
+
+      </div>
+      <!--End of div project_precision--->
+    </article>
+
+    <article class="article_right">
+      <header>Type</header>
+      <p>course project</p>
+      <header>Time</header>
+      <p>fall 2011 - spring 2012</p>
+      <header>Methods & Skills</header>
+      <p>
+        Requirements Analysis
+        <br/> Project Management
+        <br/> UML design
+        <br/> Java development
+        <br/> Design Pattern
+        <br/> Database Development
+        <br/> UI Design
+        <br/>
+      </p>
+      <header>Tools & Environment</header>
+      <p>
+        Eclipse
+        <br/> Linux
+        <br/> Oracle 10g
+        <br/> Balsamic Mockups
+        <br/> JUnit
+        <br/>
+      </p>
+      <header>Source & Archivements</header>
+      <p>
+        Documentation
+        <br/> Project Source
+        <br/>
+      </p>
+    </article>
+  </section>
+</div>
