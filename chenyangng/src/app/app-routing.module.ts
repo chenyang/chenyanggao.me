@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProjectCard } from './project/project';
 import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
 import { AboutMeComponent } from './general/about-me/about-me.component';
+import { ResumeComponent } from './general/resume/resume.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: "about_me",
     component: AboutMeComponent
+  },
+  {
+    path: "resume",
+    component: ResumeComponent
   }
 ];
 
