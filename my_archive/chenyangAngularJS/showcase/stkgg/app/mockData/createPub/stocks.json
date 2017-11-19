@@ -1,0 +1,16 @@
+{
+	"result":"success", 
+	"reason":null, 
+	"stocks":[
+		{
+			"name":"中国石油",
+			"code":"06160", 
+			"id":12329
+		},
+		{
+			"name":"中国石化",
+			"code":"06161", 
+			"id":12330
+		}
+	]
+}

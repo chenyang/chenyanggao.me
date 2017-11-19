@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh" ng-app="App">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<head>
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="components/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="components/nvd3/nv.d3.min.css" />
+		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+		<link rel="stylesheet" type="text/css" href="styles/header_footer.css" />
+		<link rel="stylesheet" type="text/css" href="styles/homePage.css" />
+		<link rel="stylesheet" type="text/css" href="styles/buyPub.css" />
+		<link rel="stylesheet" type="text/css" href="styles/stock.css" />
+		<link rel="stylesheet" type="text/css" href="styles/login.css" />
+		<link rel="stylesheet" type="text/css" href="styles/history.css" />
+		<link rel="stylesheet" type="text/css" href="styles/my.css" />
+		<link rel="stylesheet" type="text/css" href="styles/feed.css" />
+		<link rel="stylesheet" type="text/css" href="styles/comment.css" />
+		<link rel="stylesheet" type="text/css" href="styles/profile_detail.css" />
+		
+		
+		<!-- Third party libs-->
+		<script src="components/jquery/jquery-2.1.4.min.js"></script>
+		<script src="components/bootstrap/js/bootstrap.min.js"></script>
+		<script src="components/angular/angular.min.js"></script>
+		<script src="components/angular/angular-route.min.js"></script>
+		<script src="components/angular/angular-cookies.min.js"></script>
+		<script src="components/angular/angular-sanitize.min.js"></script>
+		<script src="components/angular/angular-animate.min.js"></script>
+		<script src="components/angular/ui-bootstrap-tpls-0.13.1.min.js"></script>
+		<script src="components/underscorejs/underscore-min.js"></script>
+		<script src="components/nvd3/d3.min.js"></script>
+		<script src="components/nvd3/nv.d3.min.js"></script>
+		<script src="components/nvd3/angular-nvd3.min.js"></script>
+		<script src="components/ngflow/ng-flow-standalone.min.js"></script>
+		
+		<!-- App libs -->	
+		<script src="scripts/app.js"></script>
+		<script src="scripts/module/global/controller/globalCtrl.js"></script>
+		<script src="scripts/module/user/controller/loginCtrl.js"></script>
+		<script src="scripts/module/user/controller/myProfileCtrl.js"></script>
+		<script src="scripts/module/user/controller/myBoughtCtrl.js"></script>
+		<script src="scripts/module/user/controller/myFavoriteCtrl.js"></script>
+		<script src="scripts/module/user/controller/myPubCtrl.js"></script>
+		<script src="scripts/module/user/controller/myApplyCtrl.js"></script>
+		<script src="scripts/module/user/controller/profileDetailCtrl.js"></script>
+		<script src="scripts/module/user/controller/commentCtrl.js"></script>
+		<script src="scripts/module/user/controller/commentModalCtrl.js"></script>
+		
+		<script src="scripts/module/stock/controller/paymentCtrl.js"></script>
+		<script src="scripts/module/stock/controller/homePageCtrl.js"></script>
+		<script src="scripts/module/stock/controller/stockAnalysisCtrl.js"></script>
+		<script src="scripts/module/stock/controller/predictionCtrl.js"></script>
+		<script src="scripts/module/stock/controller/buyPubCtrl.js"></script>
+		<script src="scripts/module/stock/controller/createPubCtrl.js"></script>
+		<script src="scripts/module/stock/controller/historyCtrl.js"></script>
+		<script src="scripts/module/stock/controller/feedCtrl.js"></script>
+		<script src="scripts/module/stock/controller/tipCtrl.js"></script>
+		<script src="scripts/module/stock/controller/newsCtrl.js"></script>
+		
+		<script src="scripts/module/user/service/userService.js"></script>
+		<script src="scripts/module/stock/service/stockService.js"></script>
+		<script src="scripts/module/global/service/globalService.js"></script>
+		<script src="scripts/module/global/service/cacheService.js"></script>
+	</head>
+	
+	<body ng-controller="GlobalCtrl" >
+		<!-- Nav bar -->
+		<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		  	<!-- Navbar header -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" ng-click="isRootNavbarCollapsed = !isRootNavbarCollapsed" aria-expanded="false"
+		      style="padding:2px 5px">
+		        <!-- <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> -->
+		        <span style="font-size:20px;" class="glyphicon glyphicon-cog"></span>
+		      </button>
+		      <a class="navbar-brand" href="#/">投资咨询</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling. NOTE: id=m-navbar-->
+		    <div class="collapse navbar-collapse" collapse ="isRootNavbarCollapsed">
+		   	  <!-- Left side navbar components -->
+		      <ul class="nav navbar-nav">
+		      	<li class="dropdown">
+		          <a class="dropdown-toggle" tooltip="2015-08-10更新" tooltip-placement="bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		          		进展(页面及API)<span class="caret"></span>
+		          </a>
+		          <ul class="dropdown-menu">
+		          	<li><a href="#/projectProgress" >页面进展 </a></li>
+		            <li><a href="#/apiProgress">API 定义 </a></li>
+		          </ul>
+		        </li><!-- /.dropdown -->
+		      	
+		      	<li><a href="#/login">登陆页</a></li>
+		        <li class="dropdown">
+		          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		          		简单页面（待美化）<span class="caret"></span>
+		          </a>
+		          <ul class="dropdown-menu">
+		         	<li><a href="#/">发现页</a></li>
+		          	<li><a href="#/createPub">创建Pub</a></li>
+		            <li><a href="#/myProfile">“我的”页</a></li>
+		            <li><a href="#/stkAnal/12">Timeline页</a></li>
+		        	<li><a href="#/buyPub/12">CoverPage</a></li>
+		         	<li><a href="#/comments/1">评论页</a></li>
+		            <li><a href="#/feed">动态页</a></li>
+		            <li><a href="#/history/tip/1">修改历史(tips)</a></li>
+		            <li><a href="#/history/prediction/1">修改历史(预测)</a></li>
+		             <li><a href="#/payment">支付</a></li>
+		          </ul>
+		        </li><!-- /.dropdown -->
+		        <li><a href=""><button ng-click="logout()" class="btn btn-small btn-danger " style="padding:2px 4px; font-size:10px">清空cookie</button></a></li>
+		        
+		      </ul>
+		      <!-- Right side navbar components -->
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a><span class="label label-info">{{getLoginStatus()}}</span></a></li>
+		        <!-- <a href="http://123.57.210.176/index.php?r=admin/member"> -->
+		        <li><a href="http://chenyanggao.info"><span class="label label-default">chenyanggao.info</span></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<!-- 
+			App Header
+		 -->
+		 <div class="container-fluid">
+		 	<div class="app-header row" ng-show="showAppHeader">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4  text-left">
+					<button type="button" class="btn btn-default" aria-hidden="true" ng-click="refreshPage()"><span class="icon glyphicon glyphicon-refresh"></span> 刷新 </button>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4  text-center">
+					<span class="title" aria-hidden="true">{{appHeaderName}}</span>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-right">
+					<button type="button" class="btn btn-default" aria-hidden="true" ng-click="logout()"><span class="icon glyphicon glyphicon-log-out"></span> 登出 </button>
+				</div> 
+				
+			</div>
+		 </div>
+		
+		<!-- Single page App -->
+		<div class="body-content">
+			<div ng-view class="view-frame"></div>
+		</div>
+	</body>
+</html>

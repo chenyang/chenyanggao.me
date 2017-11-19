@@ -1,0 +1,41 @@
+.comment li{
+	width:50%;
+	text-align:center
+}
+
+.comment .row{
+	border-bottom:1px solid #ccc;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.comment .user-block .photo{
+	width:35px;
+	height:35px;
+}
+
+.comment .comment-block .name{
+	font-size:12px;
+	color:#337AB7;
+}
+
+.comment .comment-block .action{
+	margin-left:2px;
+	font-size:10px;
+	color:#4F4C4C;
+}
+
+.comment .comment-block .content{
+	padding:5px;
+}
+
+.comment .comment-block .footer{
+	margin-left:2px;
+	font-size:10px;
+	color:#CCC;
+	
+}
+.comment .comment-block .footer .comment-icon{
+	font-size:14px;
+	margin-right:2px;
+}

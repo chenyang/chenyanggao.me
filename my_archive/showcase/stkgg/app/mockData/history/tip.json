@@ -1,0 +1,18 @@
+{
+	"result":"success", 
+	"reason": null, 
+	"history":[
+		{
+			"date":"2015-07-01", 
+			"content":"历史1"
+		}, 
+		{
+			"date":"2015-07-01", 
+			"content":"历史2"
+		}, 
+		{
+			"date":"2015-07-01", 
+			"content":"历史3"
+		}
+	]
+}
