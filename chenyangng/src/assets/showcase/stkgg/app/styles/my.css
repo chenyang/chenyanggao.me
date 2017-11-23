@@ -1,0 +1,30 @@
+/**myProfile**/
+.myprofile .btn{
+	padding:0 2px;
+}
+.myprofile .list-group-item{
+	padding:20px;
+	color:#999;
+}
+
+
+/**myFavorite**/
+.myfavorite-thumbnails, .mypub-thumbnails{
+	padding: 10px;
+	font-size:12px;
+}
+.myfavorite-thumbnails .thumbnail, .mypub-thumbnails .thumbnail{
+	-moz-box-shadow: 0 8px 5px 0 #999;
+	-webkit-box-shadow: 0 8px 5px 0 #999;
+}
+.myfavorite-thumbnails [class^="col-"], .mypub-thumbnails [class^="col-"]{
+	padding:2px;
+}
+
+.myfavorite-thumbnails .thumbnail-desc .profit, .mypub-thumbnails .thumbnail-desc .profit{
+	margin-top:10px;
+	font-size:18px;
+	color:red;
+	font-weight:900;
+}
+
