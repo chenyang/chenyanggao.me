@@ -7,14 +7,20 @@ import { ProjectCard } from './project/project';
 import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
 import { AboutMeComponent } from './general/about-me/about-me.component';
 import { ResumeComponent } from './general/resume/resume.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   {
     path: "",
+    redirectTo: "/projectCards",
+    pathMatch: "full"
+  },
+  {
+    path: "projectCards",
     component: ProjectCardComponent
   },
   {
-    path: "detail",
+    path: "detail/:id",
     component: ProjectDetailComponent
   },
   {
@@ -30,7 +36,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgbModule.forRoot()
   ],
   exports: [RouterModule],
   declarations: []

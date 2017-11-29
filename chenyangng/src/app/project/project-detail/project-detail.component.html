@@ -1,3 +1,22 @@
-<p>
-  project-detail works!
-</p>
+<div style="color:#ffffff">test title</div>
+<div *ngIf="chosenProjectCard">
+    <div style="color:white" >this is the static html template</div>
+    <b style="color:white">{{chosenProjectCard.headerDesc}}</b>
+</div>
+
+<div>
+  <aside>
+    <h3>PROJECTS</h3>
+    <ngb-tabset vertical="true" type="pills">
+      <ngb-tab>
+        <div *ngFor="let sideBar of sideBarList">
+            <ng-template>
+                <a>{{sideBar.desc}}
+                  <br/>---{{sideBar.content}}
+                </a>
+              </ng-template>
+        </div>
+      </ngb-tab>
+    </ngb-tabset>
+  </aside>
+</div>

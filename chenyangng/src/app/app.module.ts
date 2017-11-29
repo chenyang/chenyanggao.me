@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { ProjectCardComponent } from './project/project-card/project-card.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -9,10 +8,12 @@ import { AboutMeComponent } from './general/about-me/about-me.component';
 import { ProjectModule } from './project/project.module';
 import { GeneralModule } from './general/general.module';
 import { SharedModule } from './shared/shared.module';
+import { ProjectService } from './project.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     SharedModule,
@@ -24,7 +25,7 @@ import { SharedModule } from './shared/shared.module';
   exports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ProjectService], //important! provide service
   bootstrap: [AppComponent]
 })
 export class AppModule {

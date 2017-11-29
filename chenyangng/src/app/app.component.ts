@@ -10,6 +10,7 @@ import { Component, ViewEncapsulation} from '@angular/core';
   './css/sidebar.css',
   './css/bootstrap/css/bootstrap.min.css',
   './css/reset.css',
+  './css/projects_detail.css'
   ]
 })
 export class AppComponent {

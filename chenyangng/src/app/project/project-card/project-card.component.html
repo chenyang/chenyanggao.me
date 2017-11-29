@@ -1,10 +1,10 @@
 <div class="home">
   <div class="row">
     <div *ngFor="let project of projectList" class="home-project col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <article class="thumbnail" (click)="directLink(project.link)">
+      <article class="thumbnail" (click)="onSelect(project)">
         <header>
           <div align="left" style="font-size:10px">{{project.titleDesc}}}
-            <a [href]="project.link">Details</a>
+            <a routerLink="/detail/{{project.id}}">Details</a>
           </div>
           <br/>
           <h1>{{project.headerDesc}}
@@ -22,4 +22,9 @@
       </article>
     </div>
   </div>
+
+  <!--With input/output: interaction between components-->
+  <!--
+    <app-project-detail [chosenProjectCard] = "selectedProjectCard"></app-project-detail>
+  -->
 </div>
