@@ -1,22 +1,23 @@
-<div style="color:#ffffff">test title</div>
-<div *ngIf="chosenProjectCard">
-    <div style="color:white" >this is the static html template</div>
-    <b style="color:white">{{chosenProjectCard.headerDesc}}</b>
+<div id="projects_detail">
+    <div>test title</div>
+    <div *ngIf="chosenProjectCard">
+        <div>this is the static html template</div>
+        <b>{{chosenProjectCard.headerDesc}}</b>
+        <b>{{chosenProjectCard.descParagraph}}</b>
+    </div>
 </div>
 
-<div>
+
+<div class="sidebar">
   <aside>
     <h3>PROJECTS</h3>
-    <ngb-tabset vertical="true" type="pills">
-      <ngb-tab>
-        <div *ngFor="let sideBar of sideBarList">
-            <ng-template>
-                <a>{{sideBar.desc}}
-                  <br/>---{{sideBar.content}}
-                </a>
-              </ng-template>
-        </div>
-      </ngb-tab>
-    </ngb-tabset>
+    <ngb-tabset type="pills" [orientation]="'vertical'">
+        <ngb-tab *ngFor="let sideBar of sideBarList">
+            <ng-template ngbTabTitle><b>{{sideBar.desc}}------{{sideBar.content}}</b></ng-template>
+            <ng-template ngbTabContent>
+                <!--TODO with content -->
+            </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
   </aside>
 </div>

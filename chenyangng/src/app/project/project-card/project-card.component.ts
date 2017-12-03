@@ -5,13 +5,7 @@ import { ProjectService } from "../../project.service";
 @Component({
   selector: "app-project-card",
   templateUrl: "./project-card.component.html",
-  styleUrls: [
-    "../../css/home.css",
-    "../../css/projects.css",
-    "../../css/index.css",
-    "../../css/bootstrap/css/bootstrap.min.css",
-    "../../css/reset.css"
-  ]
+  styleUrls: ["./project-card.component.css"]
 })
 export class ProjectCardComponent implements OnInit {
   selectedProjectCard: ProjectCard;
