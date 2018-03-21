@@ -1,14 +1,11 @@
+import {GeneralModule} from './modules/general/general.module';
+import {ProjectModule} from './modules/project/project.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { ProjectCardComponent } from './project/project-card/project-card.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
-import { AboutMeComponent } from './general/about-me/about-me.component';
-import { ProjectModule } from './project/project.module';
-import { GeneralModule } from './general/general.module';
 import { SharedModule } from './shared/shared.module';
-import { ProjectService } from './project.service';
+import { ProjectService } from './service/project.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({

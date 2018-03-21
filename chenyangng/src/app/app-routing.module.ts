@@ -1,12 +1,11 @@
+import {ResumeComponent} from './modules/general/resume/resume.component';
+import {AboutMeComponent} from './modules/general/about-me/about-me.component';
+import {ProjectDetailComponent} from './modules/project/project-detail/project-detail.component';
+import {ProjectCardComponent} from './modules/project/project-card/project-card.component';
 import {Routes, RouterModule} from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectCardComponent } from './project/project-card/project-card.component';
 import { AppComponent } from './app.component';
-import { ProjectCard } from './project/project';
-import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
-import { AboutMeComponent } from './general/about-me/about-me.component';
-import { ResumeComponent } from './general/resume/resume.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [

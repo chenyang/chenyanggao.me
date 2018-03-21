@@ -1,6 +1,7 @@
+import {ProjectCard} from '../modules/project/project';
+import {SideBar} from '../modules/project/sideBar';
+
 import { Injectable } from '@angular/core';
-import {ProjectCard} from './project/project';
-import { SideBar } from './project/sideBar';
 
 @Injectable()
 export class ProjectService {

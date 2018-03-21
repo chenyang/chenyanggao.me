@@ -13,7 +13,11 @@
     <h3>PROJECTS</h3>
     <ngb-tabset type="pills" [orientation]="'vertical'">
         <ngb-tab *ngFor="let sideBar of sideBarList">
-            <ng-template ngbTabTitle><b>{{sideBar.desc}}------{{sideBar.content}}</b></ng-template>
+            <ng-template ngbTabTitle>
+                <div (click)="onSelectSideBar(sideBar)">
+                    <b>{{sideBar.desc}}------{{sideBar.content}}</b>
+                </div>
+              </ng-template>
             <ng-template ngbTabContent>
                 <!--TODO with content -->
             </ng-template>
