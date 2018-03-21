@@ -1,7 +1,7 @@
 import {ProjectService} from '../../../service/project.service';
 import { Component, OnInit, Input} from '@angular/core';
 import {Location} from '@angular/common';
-import { ActivatedRoute} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
 import {ProjectCard, Project} from '../project';
 import { SideBar } from '../sideBar';
 
@@ -16,6 +16,7 @@ export class ProjectDetailComponent implements OnInit {
    sideBarList: Array<SideBar>;
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private projectService: ProjectService,
     private location: Location
@@ -27,7 +28,10 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   onSelectSideBar(sideBar: SideBar) :void {
-    console.log(sideBar);
+    let pId = sideBar.id;
+    if(pId){//change route
+      console.log(pId);
+    }
   }
 
   getSideBarList(): Array<SideBar>{
