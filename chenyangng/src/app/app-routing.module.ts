@@ -43,64 +43,6 @@ const routes: Routes = [
   {
     path: "resume",
     component: ResumeComponent
-  },
-
-  //project details
-  {
-    path: "michelin",
-    component: MichelinComponent
-  },
-  {
-    path: "findevent",
-    component: FindeventComponent
-  },
-  {
-    path: "iovision",
-    component: IovisionComponent
-  },
-  {
-    path: "asa",
-    component: AsaComponent
-  },
-  {
-    path: "uvsp",
-    component: UvspComponent
-  },
-  {
-    path: "pollaroid",
-    component: PollaroidComponent
-  },
-  {
-    path: "french_airline",
-    component: FrenchAirlineComponent
-  },
-  {
-    path: "stadium",
-    component: StadiumComponent
-  },
-  {
-    path: "expernova",
-    component: ExpernovaComponent
-  },
-  {
-    path: "allons_y",
-    component: AllonsyComponent
-  },
-  {
-    path: "good_deed_movement",
-    component: GoodDeedMovementComponent
-  },
-  {
-    path: "slab",
-    component: SlabComponent
-  },
-  {
-    path: "euronext",
-    component: EuronextComponent
-  },
-  {
-    path: "mail_system",
-    component: MailSystemComponent
   }
 ];
 

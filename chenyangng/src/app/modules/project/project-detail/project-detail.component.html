@@ -1,32 +1,23 @@
+<!--dynamic component loading -->
 <div>
-  <!--
-    <div>test title</div>
-    <div *ngIf="chosenProjectCard">
-        <div>this is the static html template</div>
-        <b>{{chosenProjectCard.headerDesc}}</b>
-        <b>{{chosenProjectCard.descParagraph}}</b>
-    </div>
-  -->
-
-    <app-good-deed-movement></app-good-deed-movement>
-
+  <ng-template #dynamicContainer></ng-template>
 </div>
 
 
 <div class="sidebar">
   <aside>
     <h3>PROJECTS</h3>
-    <ngb-tabset type="pills" [orientation]="'vertical'">
-        <ngb-tab *ngFor="let sideBar of sideBarList">
-            <ng-template ngbTabTitle>
-                <div (click)="onSelectSideBar(sideBar)">
-                    <b>{{sideBar.desc}}------{{sideBar.content}}</b>
-                </div>
-              </ng-template>
-            <ng-template ngbTabContent>
-                <!--TODO with content -->
-            </ng-template>
-        </ngb-tab>
-      </ngb-tabset>
+    <ngb-tabset #tabCompo (tabChange)="onSelectSideBar($event)" type="pills" [orientation]="'vertical'">
+      <ngb-tab [id]="sideBar.id" *ngFor="let sideBar of sideBarList">
+        <ng-template ngbTabTitle>
+          <b>{{sideBar.desc}}------{{sideBar.content}}</b>
+        </ng-template>
+        <ng-template ngbTabContent>
+          <!--TODO-->
+          <!--ng template for content -->
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
   </aside>
 </div>
+

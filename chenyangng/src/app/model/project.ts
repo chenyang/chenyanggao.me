@@ -1,3 +1,4 @@
+import {Type} from '@angular/core/src/type';
 /**
  * Created by Administrateur on 30/03/2017.
  */
@@ -31,4 +32,5 @@ export class ProjectCard extends ProjectSchema {
     imgUrl: string;
     descParagraph: string;
     keyWords: Array<string>;
+    component: Type<any>;
 }

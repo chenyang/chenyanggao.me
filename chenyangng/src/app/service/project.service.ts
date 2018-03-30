@@ -1,7 +1,22 @@
-import {ProjectCard} from '../modules/project/project';
-import {SideBar} from '../modules/project/sideBar';
+
 
 import { Injectable } from '@angular/core';
+import { MichelinComponent } from '../modules/project/michelin/michelin.component';
+import { FindeventComponent } from '../modules/project/findevent/findevent.component';
+import { IovisionComponent } from '../modules/project/iovision/iovision.component';
+import { AsaComponent } from '../modules/project/asa/asa.component';
+import { UvspComponent } from '../modules/project/uvsp/uvsp.component';
+import { PollaroidComponent } from '../modules/project/pollaroid/pollaroid.component';
+import { FrenchAirlineComponent } from '../modules/project/french-airline/french-airline.component';
+import { StadiumComponent } from '../modules/project/stadium/stadium.component';
+import { ExpernovaComponent } from '../modules/project/expernova/expernova.component';
+import { AllonsyComponent } from '../modules/project/allonsy/allonsy.component';
+import { GoodDeedMovementComponent } from '../modules/project/good-deed-movement/good-deed-movement.component';
+import { SlabComponent } from '../modules/project/slab/slab.component';
+import { EuronextComponent } from '../modules/project/euronext/euronext.component';
+import { MailSystemComponent } from '../modules/project/mail-system/mail-system.component';
+import { SideBar } from '../model/sideBar';
+import { ProjectCard } from '../model/project';
 
 @Injectable()
 export class ProjectService {
@@ -17,98 +32,112 @@ export class ProjectService {
         'desc':'MICHELIN® solutions',
         'content':'J2EE web dashboard development',
         'link':'views/Michelin.html',
-        'active':false
+        'active':false,
+        'component':MichelinComponent
       },
       {
         'id':'findevent',
         'desc':'Music Event',
         'content':'Big Data and Semantic web application for music',
         'link':'views/FindEvent.html',
-        'active':false
+        'active':false,
+        'component': FindeventComponent
       },
       {
         'id':'iovision',
         'desc':'RIA IOvision',
         'content':'Small Business ERP Prototype & system integration',
         'link':'views/IOvision.html',
-        'active':false
+        'active':false,
+        'component':IovisionComponent
       },
       {
         'id':'asa',
         'desc':'ASA QLIMS',
         'content':'PhoneGap Tablet prototype',
         'link':'views/ASA.html',
-        'active':false
+        'active':false,
+        'component':AsaComponent
       },
       {
         'id':'uvsp',
         'desc':'UVSP',
         'content':'.NET Framework Devc',
         'link':'views/UVSP.html',
-        'active':false
+        'active':false,
+        'component':UvspComponent
       },
       {
         'id':'pollaroid',
         'desc':'POLLAROID',
         'content':'iOS development',
         'link':'views/Pollaroid.html',
-        'active':false
+        'active':false,
+        'component':PollaroidComponent
       },
       {
         'id':'french_airline',
         'desc':'French Airline',
         'content': 'Algorithm in C',
         'link': 'views/French_Airline.html',
-        'active': false
+        'active': false,
+        'component':FrenchAirlineComponent
       },
       {
         'id': 'stadium',
         'desc': 'Service Management System',
         'content': 'Web Based CMS',
         'link': 'views/Stadium.html',
-        'active': false
+        'active': false,
+        'component':StadiumComponent
       },
       {
         'id': 'expernova',
         'desc': 'Expernova',
         'content': 'Social Network Integration',
         'link': 'views/Expernova.html',
-        'active': false
+        'active': false,
+        'component':ExpernovaComponent
       },
       {
         'id': 'allons_y',
         'desc': 'Allons-y Francais',
         'content': 'French Teaching Video',
         'link': 'views/Allons-y.html',
-        'active': false
+        'active': false,
+        'component':AllonsyComponent
       },
       {
         'id': 'good_deed_movement',
         'desc': 'Good Tracking Service',
         'content': 'PHP Forum development',
         'link': 'views/Good_Deed_Movement.html',
-        'active': false
+        'active': false,
+        'component':GoodDeedMovementComponent
       },
       {
         'id': 'slab',
         'desc': 'SLAB',
         'content': 'Java Based Resource Planning System',
         'link': 'views/SLAB.html',
-        'active': false
+        'active': false,
+        'component':SlabComponent
       },
       {
         'id': 'euronext',
         'desc': 'Euronext',
         'content': 'European Enterprises analysis',
         'link': 'views/Euronext.html',
-        'active': false
+        'active': false,
+        'component':EuronextComponent
       },
       {
         'id': 'mail_system',
         'desc': 'Simple Chat',
         'content': '-C based mailing system',
         'link': 'views/Mail_System.html',
-        'active': false
+        'active': false,
+        'component':MailSystemComponent
       }
   ];
     return result;
@@ -133,7 +162,8 @@ export class ProjectService {
           "BI Components & Dashboard",
           "Connected objects & Data analysis",
           "Cross-platform intg"
-        ]
+        ],
+        component:MichelinComponent
       },
       {
         id: "findevent",
@@ -146,7 +176,8 @@ export class ProjectService {
         devDesc: "Big Data & semantic web application",
         descParagraph: 'Inspired by big data technologies and AngularJS Framework, our team has realized a semantic web application that helps users to find and retrieve information about music events that will be held in the city. I was responsible for architecture design, AngularJS framework and JAX-RS implementation',
         imgUrl: "assets/images/projects_images/FindEvent.png",
-        keyWords: ["AngularJS", "HTML/CSS/Bootstrap", "Web Semantic", "Big Data", "SPARQL", "JEE Web Service (JAX-RS)"]
+        keyWords: ["AngularJS", "HTML/CSS/Bootstrap", "Web Semantic", "Big Data", "SPARQL", "JEE Web Service (JAX-RS)"],
+        component:FindeventComponent
       },
       {
         id: "iovision",
@@ -159,9 +190,11 @@ export class ProjectService {
         devDesc: "Business ERP Prototype & System integration",
         descParagraph: "This internship and job's mission was to research, modelize and develop a Rich Client prototype for company's current ERP 'IOvision'. Instructed by lead system engineer, I successfully integrated the prototpe by using AngularJS Framework with a new layer of JEE Web Services.",
         imgUrl: "assets/images/projects_images/IOvision.jpg",
-        keyWords: ["AngularJS", "HTML5/CSS3/Twitter Bootstrap", "Unit test", "Responsive design", "JEE Web Service technologies"]
+        keyWords: ["AngularJS", "HTML5/CSS3/Twitter Bootstrap", "Unit test", "Responsive design", "JEE Web Service technologies"],
+        component:IovisionComponent
       },
       {
+        component:AsaComponent,
         id: "asa",
         desc: "ASA QLIMS",
         content: "PhoneGap Tablet prototype",
@@ -175,6 +208,7 @@ export class ProjectService {
         keyWords: ["Javascript", "PhoneGap", "JQueryMobile", "XDK", "Restful API"]
       },
       {
+        component:UvspComponent,
         id: "uvsp",
         desc: "UVSP",
         content: ".NET Framework Devc",
@@ -188,6 +222,7 @@ export class ProjectService {
         keyWords: ["Web API", ".NET MVC4  C#", "Visual Studio 2012 Express", "Entity Framework", "jQuery, CSS3, HTML5, Bootstrap"]
       },
       {
+        component:PollaroidComponent,
         id: "pollaroid",
         desc: "POLLAROID",
         content: "iOS development",
@@ -201,6 +236,7 @@ export class ProjectService {
         keyWords: ["iOS Development", "Storyboard", "SNS Integration", "Requirements Analysis", "XCode"]
       },
       {
+        component:FrenchAirlineComponent,
         id: "french_airline",
         desc: "French Airline",
         content: "Algorithm in C",
@@ -214,6 +250,7 @@ export class ProjectService {
         keyWords: ["C programming", "Algorithm Analysis & Optimization", "HTML programming", "GoogleMap API Integration"]
       },
       {
+        component:StadiumComponent,
         id: "stadium",
         desc: "Service Management System",
         content: "Web Based CMS",
@@ -227,6 +264,7 @@ export class ProjectService {
         keyWords: ["J2EE Development", "UI Design & Requirements Analysis", "SQL Server 2005", "System Design & Modeling"]
       },
       {
+        component:ExpernovaComponent,
         id: "expernova",
         desc: "Expernova",
         content: "Social Network Integration",
@@ -240,6 +278,7 @@ export class ProjectService {
         keyWords: ["Social Network Integration & Development", "Web Development"]
       },
       {
+        component:AllonsyComponent,
         id: "allons_y",
         desc: "Allons-y Francais",
         content: "French Teaching Video",
@@ -253,6 +292,7 @@ export class ProjectService {
         keyWords: ["Video Fixing and Recording", "Web Development", "French communication", "Image fixing"]
       },
       {
+        component:GoodDeedMovementComponent,
         id: "good_deed_movement",
         desc: "Good Tracking Service",
         content: "PHP Forum development",
@@ -266,6 +306,7 @@ export class ProjectService {
         keyWords: ["PHP development", "Database Design", "Server Configuration", "GoogleMap API Integration", "UI Design"]
       },
       {
+        component:SlabComponent,
         id: "slab",
         desc: "SLAB",
         content: "Java Based Resource Planning System",
@@ -279,6 +320,7 @@ export class ProjectService {
         keyWords: ["Requirements Analysis", "UML design", "Java development", "Design Pattern", "Database Development"]
       },
       {
+        component:EuronextComponent,
         id: "euronext",
         desc: "Euronext",
         content: "European Enterprises analysis",
@@ -292,6 +334,7 @@ export class ProjectService {
         keyWords: ["PL/SQL Development", "Web Development", "Statistic Analysis", "Database modeling", "Requirement & Solution analysis"]
       },
       {
+        component:MailSystemComponent,
         id: "mail_system",
         desc: "Simple Chat",
         content: "-C based mailing system",
